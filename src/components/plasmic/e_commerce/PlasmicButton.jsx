@@ -284,6 +284,26 @@ function PlasmicButton__RenderFunc(props) {
           })}
         </div>
       ) : null}
+      <a
+        data-plasmic-name={"link"}
+        data-plasmic-override={overrides.link}
+        className={classNames(
+          projectcss.all,
+          projectcss.a,
+          projectcss.__wab_text,
+          sty.link
+        )}
+        href={`/HO`}
+      >
+        <React.Fragment>
+          <span
+            className={"plasmic_default__all plasmic_default__span"}
+            style={{ color: "#6AD63E" }}
+          >
+            {"Log-in"}
+          </span>
+        </React.Fragment>
+      </a>
       <div
         data-plasmic-name={"contentContainer"}
         data-plasmic-override={overrides.contentContainer}
@@ -534,8 +554,16 @@ function useBehavior(props, ref) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "startIconContainer", "contentContainer", "endIconContainer"],
+  root: [
+    "root",
+    "startIconContainer",
+    "link",
+    "contentContainer",
+    "endIconContainer"
+  ],
+
   startIconContainer: ["startIconContainer"],
+  link: ["link"],
   contentContainer: ["contentContainer"],
   endIconContainer: ["endIconContainer"]
 };
@@ -574,6 +602,7 @@ export const PlasmicButton = Object.assign(
   {
     // Helper components rendering sub-elements
     startIconContainer: makeNodeComponent("startIconContainer"),
+    link: makeNodeComponent("link"),
     contentContainer: makeNodeComponent("contentContainer"),
     endIconContainer: makeNodeComponent("endIconContainer"),
     // Metadata about props expected for PlasmicButton

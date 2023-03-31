@@ -238,6 +238,9 @@
   height: 1em;
   flex-shrink: 0;
 }
+.link {
+  position: relative;
+}
 .contentContainer {
   display: flex;
   position: relative;

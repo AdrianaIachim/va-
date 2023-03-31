@@ -116,7 +116,7 @@
   border-radius: 6px;
   padding: 11px 0px 11px 15px;
 }
-.text__xXcHg {
+.link__xXcHg {
   position: relative;
   width: 100%;
   height: auto;
@@ -134,6 +134,9 @@
   width: 1em;
   height: 1em;
 }
+.link__bWnjf {
+  position: relative;
+}
 .text__bRn1U {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -149,6 +152,7 @@
   text-decoration-line: none !important;
   text-overflow: clip !important;
   overflow: hidden;
+  margin-left: 0px;
 }
 .svg__mmE7J {
   position: relative;

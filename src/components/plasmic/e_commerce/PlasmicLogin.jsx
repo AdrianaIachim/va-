@@ -253,18 +253,16 @@ function PlasmicLogin__RenderFunc(props) {
                     />
                   </div>
                 ) : null}
-                <div
+                <a
                   className={classNames(
                     projectcss.all,
+                    projectcss.a,
                     projectcss.__wab_text,
-                    sty.text__xXcHg
+                    sty.link__xXcHg
                   )}
-                  onMouseMove={async event => {
-                    const $steps = {};
-                  }}
                 >
                   {"Hai dimenticato la password?"}
-                </div>
+                </a>
               </p.Stack>
               <Button
                 data-plasmic-name={"button"}
@@ -276,6 +274,7 @@ function PlasmicLogin__RenderFunc(props) {
                     role={"img"}
                   />
                 }
+                link={`/HO`}
                 startIcon={
                   <ChecksvgIcon
                     className={classNames(projectcss.all, sty.svg__jpXk4)}
@@ -283,6 +282,17 @@ function PlasmicLogin__RenderFunc(props) {
                   />
                 }
               >
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__bWnjf
+                  )}
+                  href={"https://www.plasmic.app/"}
+                >
+                  {""}
+                </a>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -290,7 +300,7 @@ function PlasmicLogin__RenderFunc(props) {
                     sty.text__bRn1U
                   )}
                 >
-                  {"Log-in"}
+                  {""}
                 </div>
               </Button>
             </p.Stack>
