@@ -154,6 +154,7 @@ function PlasmicFooter__RenderFunc(props) {
                 projectcss.__wab_text,
                 sty.link__rdGA
               )}
+              href={`/termini-condizioni`}
               target={undefined}
             >
               {"termini e condizioni"}
@@ -165,7 +166,7 @@ function PlasmicFooter__RenderFunc(props) {
                 projectcss.__wab_text,
                 sty.link__i57Wd
               )}
-              href={"https://www.plasmic.app/"}
+              href={`/privacypolicy`}
             >
               {"privacy policy"}
             </a>

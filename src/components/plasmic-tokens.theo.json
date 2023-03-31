@@ -3001,6 +3001,16 @@
       }
     },
     {
+      "name": "Unnamed Style Token",
+      "type": "spacing",
+      "value": "1px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "2GyyV1uN4xbnqKtJ7pjrQU",
+        "id": "Tx-zn1pH6"
+      }
+    },
+    {
       "name": "UnnamedStyleToken 2",
       "type": "lineheight",
       "value": "1.5",
@@ -3023,7 +3033,7 @@
     {
       "name": "background",
       "type": "color",
-      "value": "#F7F7F7",
+      "value": "#88DD9B",
       "category": "color",
       "meta": {
         "projectId": "2GyyV1uN4xbnqKtJ7pjrQU",

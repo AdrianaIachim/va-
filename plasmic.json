@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -38,7 +38,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -51,7 +52,8 @@
       "images": [],
       "indirect": true,
       "globalContextsFilePath": "",
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "2GyyV1uN4xbnqKtJ7pjrQU",
@@ -346,6 +348,46 @@
           "cssFilePath": "plasmic/e_commerce/PlasmicTerminiCondizioni.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "0727Bpzvzd",
+          "name": "PrivacyPolicy",
+          "type": "managed",
+          "projectId": "2GyyV1uN4xbnqKtJ7pjrQU",
+          "renderModuleFilePath": "plasmic/e_commerce/PlasmicPrivacyPolicy.jsx",
+          "importSpec": {
+            "modulePath": "PrivacyPolicy.jsx"
+          },
+          "cssFilePath": "plasmic/e_commerce/PlasmicPrivacyPolicy.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "vk921MAWAct",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "2GyyV1uN4xbnqKtJ7pjrQU",
+          "renderModuleFilePath": "plasmic/e_commerce/PlasmicButton2.jsx",
+          "importSpec": {
+            "modulePath": "Button2.jsx"
+          },
+          "cssFilePath": "plasmic/e_commerce/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "cKyZ4O8O1q",
+          "name": "SfondoUnico",
+          "type": "managed",
+          "projectId": "2GyyV1uN4xbnqKtJ7pjrQU",
+          "renderModuleFilePath": "plasmic/e_commerce/PlasmicSfondoUnico.jsx",
+          "importSpec": {
+            "modulePath": "SfondoUnico.jsx"
+          },
+          "cssFilePath": "plasmic/e_commerce/PlasmicSfondoUnico.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -543,6 +585,16 @@
           "id": "hsR3GxY-xL",
           "name": "Icon28Icon",
           "moduleFilePath": "plasmic/e_commerce/icons/PlasmicIcon__Icon28.jsx"
+        },
+        {
+          "id": "dKQnY774Exf",
+          "name": "Icon38Icon",
+          "moduleFilePath": "plasmic/e_commerce/icons/PlasmicIcon__Icon38.jsx"
+        },
+        {
+          "id": "sYqamsC_pQ8c",
+          "name": "Icon9Icon",
+          "moduleFilePath": "plasmic/e_commerce/icons/PlasmicIcon__Icon9.jsx"
         }
       ],
       "images": [
@@ -910,6 +962,11 @@
           "id": "h2I6y186Z",
           "name": "percentage-discount.png",
           "filePath": "plasmic/e_commerce/images/percentageDiscountpng.png"
+        },
+        {
+          "id": "R4F7eEImqOt-",
+          "name": "image 5",
+          "filePath": "plasmic/e_commerce/images/image5.svg"
         }
       ],
       "indirect": false,

@@ -121,11 +121,51 @@ function PlasmicGestioneOrdini__RenderFunc(props) {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.foreground2)}
                   >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__pW14B)}
-                    />
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__r2Q2)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___3Y8Tx
+                        )}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qw7Zi
+                        )}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___9BHug
+                        )}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___9E3Af
+                        )}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__eG2F
+                        )}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__h5CxD
+                        )}
+                      />
+                    </div>
                   </p.Stack>
                 </div>
               </div>
@@ -1298,51 +1338,6 @@ function PlasmicGestioneOrdini__RenderFunc(props) {
                 </p.Stack>
               </p.Stack>
             ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"weLove"}
-                data-plasmic-override={overrides.weLove}
-                className={classNames(projectcss.all, sty.weLove)}
-              >
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___8Bedk)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.columns__pVuqO)}
-                    />
-                  </div>
-                ) : null}
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"weThink"}
-                data-plasmic-override={overrides.weThink}
-                className={classNames(projectcss.all, sty.weThink)}
-              >
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__bfggB)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.columns__oQ43C)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__uOjKb
-                        )}
-                      />
-                    </p.Stack>
-                  </div>
-                ) : null}
-              </div>
-            ) : null}
             <Footer
               className={classNames("__wab_instance", sty.footer__ow88A)}
             />
@@ -1360,18 +1355,14 @@ const PlasmicDescendants = {
     "header",
     "featureItem",
     "bigPlants",
-    "cactuses",
-    "weLove",
-    "weThink"
+    "cactuses"
   ],
 
   foreground2: ["foreground2"],
   header: ["header", "featureItem"],
   featureItem: ["featureItem"],
   bigPlants: ["bigPlants"],
-  cactuses: ["cactuses"],
-  weLove: ["weLove"],
-  weThink: ["weThink"]
+  cactuses: ["cactuses"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -1412,8 +1403,6 @@ export const PlasmicGestioneOrdini = Object.assign(
     featureItem: makeNodeComponent("featureItem"),
     bigPlants: makeNodeComponent("bigPlants"),
     cactuses: makeNodeComponent("cactuses"),
-    weLove: makeNodeComponent("weLove"),
-    weThink: makeNodeComponent("weThink"),
     // Metadata about props expected for PlasmicGestioneOrdini
     internalVariantProps: PlasmicGestioneOrdini__VariantProps,
     internalArgProps: PlasmicGestioneOrdini__ArgProps,

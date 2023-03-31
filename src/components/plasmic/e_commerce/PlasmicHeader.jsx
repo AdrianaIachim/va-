@@ -91,7 +91,13 @@ function PlasmicHeader__RenderFunc(props) {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__anjgA)}
+        className={classNames(projectcss.all, sty.freeBox__anjgA, {
+          [sty.freeBoxexpanded__anjgAkm7Ym]: hasVariant(
+            $state,
+            "expanded",
+            "expanded"
+          )
+        })}
       >
         {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
           <MenuButton
@@ -177,7 +183,14 @@ function PlasmicHeader__RenderFunc(props) {
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.catalogo
+                sty.catalogo,
+                {
+                  [sty.catalogoexpanded]: hasVariant(
+                    $state,
+                    "expanded",
+                    "expanded"
+                  )
+                }
               )}
               href={"/catalogo"}
               target={undefined}

@@ -16,10 +16,13 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
+import Button from "../../Button"; // plasmic-import: _fVUBuH_zTPtNr/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
 import sty from "./PlasmicLogin.module.css"; // plasmic-import: PYR3doOuIF/css
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: 5ELsae-rPxEAZc/icon
+import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: dKQnY774Exf/icon
 
 export const PlasmicLogin__VariantProps = new Array();
 
@@ -49,16 +52,28 @@ function PlasmicLogin__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "textbox2.textboxValue",
+        path: "textbox.textboxValue",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+        initFunc: ({ $props, $state, $queries, $ctx }) => "Username"
       },
       {
-        path: "textbox3.textbox2Value",
+        path: "textbox2.textbox2Value",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+        initFunc: ({ $props, $state, $queries, $ctx }) => "Inserisci Password"
+      },
+      {
+        path: "textbox.textboxValue",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => "Username"
+      },
+      {
+        path: "textbox2.textbox2Value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => "Inserisci Password"
       }
     ],
 
@@ -90,57 +105,191 @@ function PlasmicLogin__RenderFunc(props) {
               sty.root
             )}
           >
-            <input
-              data-plasmic-name={"textbox2"}
-              data-plasmic-override={overrides.textbox2}
-              className={classNames(
-                projectcss.all,
-                projectcss.input,
-                sty.textbox2
-              )}
-              onChange={e => {
-                p.generateStateOnChangeProp($state, [
-                  "textbox2",
-                  "textboxValue"
-                ])(e.target.value);
-              }}
-              placeholder={"Nome"}
-              ref={ref => {
-                $refs["textbox2"] = ref;
-              }}
-              size={1}
-              type={"text"}
-              value={p.generateStateValueProp($state, [
-                "textbox2",
-                "textboxValue"
-              ])}
-            />
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__wOi8Q)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__q3OFh
+                )}
+              >
+                {"FORMAGGI, PIANTE E BIBITE PER TUTT*!"}
+              </div>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__wAbZ7)}
+              >
+                <input
+                  data-plasmic-name={"textbox"}
+                  data-plasmic-override={overrides.textbox}
+                  autoComplete={"username"}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.input,
+                    sty.textbox
+                  )}
+                  onChange={async (...eventArgs) => {
+                    (e => {
+                      p.generateStateOnChangeProp($state, [
+                        "textbox",
+                        "textboxValue"
+                      ])(e.target.value);
+                    }).apply(null, eventArgs);
+                    (async event => {
+                      const $steps = {};
+                      $steps["setTextboxTextboxValue"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              variable: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "updateVariable",
+                                  interactionUuid: "5vi3buGMj",
+                                  componentUuid: "PYR3doOuIF",
+                                  argName: "variable"
+                                },
+                                () => ({
+                                  objRoot: $state,
+                                  variablePath: ["textbox", "textboxValue"]
+                                })
+                              ),
 
-            <input
-              data-plasmic-name={"textbox3"}
-              data-plasmic-override={overrides.textbox3}
-              className={classNames(
-                projectcss.all,
-                projectcss.input,
-                sty.textbox3
-              )}
-              onChange={e => {
-                p.generateStateOnChangeProp($state, [
-                  "textbox3",
-                  "textbox2Value"
-                ])(e.target.value);
-              }}
-              placeholder={"Cognome"}
-              ref={ref => {
-                $refs["textbox3"] = ref;
-              }}
-              size={1}
-              type={"text"}
-              value={p.generateStateValueProp($state, [
-                "textbox3",
-                "textbox2Value"
-              ])}
-            />
+                              operation: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "updateVariable",
+                                  interactionUuid: "5vi3buGMj",
+                                  componentUuid: "PYR3doOuIF",
+                                  argName: "operation"
+                                },
+                                () => 0
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "5vi3buGMj",
+                                componentUuid: "PYR3doOuIF"
+                              },
+                              () =>
+                                (({
+                                  variable,
+                                  value,
+                                  startIndex,
+                                  deleteCount
+                                }) => {
+                                  const { objRoot, variablePath } = variable;
+                                  p.set(objRoot, variablePath, value);
+                                  return value;
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["setTextboxTextboxValue"] === "object" &&
+                        typeof $steps["setTextboxTextboxValue"].then ===
+                          "function"
+                      ) {
+                        $steps["setTextboxTextboxValue"] =
+                          await __wrapUserPromise(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "5vi3buGMj",
+                              componentUuid: "PYR3doOuIF"
+                            },
+                            $steps["setTextboxTextboxValue"]
+                          );
+                      }
+                    })?.apply(null, eventArgs);
+                  }}
+                  placeholder={"Inserisci Username"}
+                  ref={ref => {
+                    $refs["textbox"] = ref;
+                  }}
+                  size={1}
+                  type={"text"}
+                  value={p.generateStateValueProp($state, [
+                    "textbox",
+                    "textboxValue"
+                  ])}
+                />
+
+                {true ? (
+                  <input
+                    data-plasmic-name={"textbox2"}
+                    data-plasmic-override={overrides.textbox2}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.input,
+                      sty.textbox2
+                    )}
+                    onChange={e => {
+                      p.generateStateOnChangeProp($state, [
+                        "textbox2",
+                        "textbox2Value"
+                      ])(e.target.value);
+                    }}
+                    placeholder={"Inserisci Password"}
+                    ref={ref => {
+                      $refs["textbox2"] = ref;
+                    }}
+                    size={1}
+                    type={"text"}
+                    value={p.generateStateValueProp($state, [
+                      "textbox2",
+                      "textbox2Value"
+                    ])}
+                  />
+                ) : null}
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xXcHg
+                  )}
+                  onMouseMove={async event => {
+                    const $steps = {};
+                  }}
+                >
+                  {"Hai dimenticato la password?"}
+                </div>
+              </p.Stack>
+              <Button
+                data-plasmic-name={"button"}
+                data-plasmic-override={overrides.button}
+                className={classNames("__wab_instance", sty.button)}
+                endIcon={
+                  <Icon38Icon
+                    className={classNames(projectcss.all, sty.svg__mmE7J)}
+                    role={"img"}
+                  />
+                }
+                startIcon={
+                  <ChecksvgIcon
+                    className={classNames(projectcss.all, sty.svg__jpXk4)}
+                    role={"img"}
+                  />
+                }
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__bRn1U
+                  )}
+                >
+                  {"Log-in"}
+                </div>
+              </Button>
+            </p.Stack>
           </div>
         </div>
       </React.Fragment>
@@ -149,9 +298,10 @@ function PlasmicLogin__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textbox2", "textbox3"],
+  root: ["root", "textbox", "textbox2", "button"],
+  textbox: ["textbox"],
   textbox2: ["textbox2"],
-  textbox3: ["textbox3"]
+  button: ["button"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -187,8 +337,9 @@ export const PlasmicLogin = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    textbox: makeNodeComponent("textbox"),
     textbox2: makeNodeComponent("textbox2"),
-    textbox3: makeNodeComponent("textbox3"),
+    button: makeNodeComponent("button"),
     // Metadata about props expected for PlasmicLogin
     internalVariantProps: PlasmicLogin__VariantProps,
     internalArgProps: PlasmicLogin__ArgProps,
