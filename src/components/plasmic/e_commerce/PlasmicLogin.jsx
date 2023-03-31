@@ -55,25 +55,25 @@ function PlasmicLogin__RenderFunc(props) {
         path: "textbox.textboxValue",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "Username"
-      },
-      {
-        path: "textbox2.textbox2Value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "Inserisci Password"
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
       },
       {
         path: "textbox.textboxValue",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "Username"
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
       },
       {
-        path: "textbox2.textbox2Value",
+        path: "textbox.textboxValue",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "Inserisci Password"
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
+      },
+      {
+        path: "password.passwordValue",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
       }
     ],
 
@@ -210,7 +210,7 @@ function PlasmicLogin__RenderFunc(props) {
                       }
                     })?.apply(null, eventArgs);
                   }}
-                  placeholder={"Inserisci Username"}
+                  placeholder={"Username"}
                   ref={ref => {
                     $refs["textbox"] = ref;
                   }}
@@ -223,31 +223,35 @@ function PlasmicLogin__RenderFunc(props) {
                 />
 
                 {true ? (
-                  <input
-                    data-plasmic-name={"textbox2"}
-                    data-plasmic-override={overrides.textbox2}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.input,
-                      sty.textbox2
-                    )}
-                    onChange={e => {
-                      p.generateStateOnChangeProp($state, [
-                        "textbox2",
-                        "textbox2Value"
-                      ])(e.target.value);
-                    }}
-                    placeholder={"Inserisci Password"}
-                    ref={ref => {
-                      $refs["textbox2"] = ref;
-                    }}
-                    size={1}
-                    type={"text"}
-                    value={p.generateStateValueProp($state, [
-                      "textbox2",
-                      "textbox2Value"
-                    ])}
-                  />
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__onzEj)}
+                  >
+                    <input
+                      data-plasmic-name={"password"}
+                      data-plasmic-override={overrides.password}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.input,
+                        sty.password
+                      )}
+                      onChange={e => {
+                        p.generateStateOnChangeProp($state, [
+                          "password",
+                          "passwordValue"
+                        ])(e.target.value);
+                      }}
+                      placeholder={"Password"}
+                      ref={ref => {
+                        $refs["password"] = ref;
+                      }}
+                      size={1}
+                      type={"password"}
+                      value={p.generateStateValueProp($state, [
+                        "password",
+                        "passwordValue"
+                      ])}
+                    />
+                  </div>
                 ) : null}
                 <div
                   className={classNames(
@@ -298,9 +302,9 @@ function PlasmicLogin__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textbox", "textbox2", "button"],
+  root: ["root", "textbox", "password", "button"],
   textbox: ["textbox"],
-  textbox2: ["textbox2"],
+  password: ["password"],
   button: ["button"]
 };
 
@@ -338,7 +342,7 @@ export const PlasmicLogin = Object.assign(
   {
     // Helper components rendering sub-elements
     textbox: makeNodeComponent("textbox"),
-    textbox2: makeNodeComponent("textbox2"),
+    password: makeNodeComponent("password"),
     button: makeNodeComponent("button"),
     // Metadata about props expected for PlasmicLogin
     internalVariantProps: PlasmicLogin__VariantProps,

@@ -246,19 +246,6 @@
     min-width: 0;
   }
 }
-.svg {
-  object-fit: cover;
-  max-width: 100%;
-  width: 107px;
-  height: 45px;
-  flex-shrink: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .svg {
-    width: 100%;
-    min-width: 0;
-  }
-}
 .link___5WUmx {
   color: var(--token-RwG4modd2sJAe-);
   font-family: "Montserrat", sans-serif;

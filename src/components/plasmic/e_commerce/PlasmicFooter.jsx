@@ -24,7 +24,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: GewF2Qmnx2xftX/css
-import LogoWhitesvgIcon from "./icons/PlasmicIcon__LogoWhitesvg"; // plasmic-import: DiAJ4qBInYgbgn/icon
 
 export const PlasmicFooter__VariantProps = new Array();
 
@@ -104,13 +103,6 @@ function PlasmicFooter__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__wRmBo)}
             >
-              <LogoWhitesvgIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
-                role={"img"}
-              />
-
               <a
                 className={classNames(
                   projectcss.all,
@@ -118,7 +110,7 @@ function PlasmicFooter__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.link___5WUmx
                 )}
-                href={`/`}
+                href={`/Home`}
               >
                 {"Home"}
               </a>
@@ -178,9 +170,8 @@ function PlasmicFooter__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menuButton", "svg"],
-  menuButton: ["menuButton"],
-  svg: ["svg"]
+  root: ["root", "menuButton"],
+  menuButton: ["menuButton"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -217,7 +208,6 @@ export const PlasmicFooter = Object.assign(
   {
     // Helper components rendering sub-elements
     menuButton: makeNodeComponent("menuButton"),
-    svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
     internalArgProps: PlasmicFooter__ArgProps

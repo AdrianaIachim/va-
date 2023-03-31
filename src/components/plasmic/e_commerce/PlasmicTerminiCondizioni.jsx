@@ -79,6 +79,17 @@ function PlasmicTerminiCondizioni__RenderFunc(props) {
                 className={classNames("__wab_instance", sty.header2)}
               />
 
+              <div
+                data-plasmic-name={"text"}
+                data-plasmic-override={overrides.text}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text
+                )}
+              >
+                {"Enter some text"}
+              </div>
               <Footer
                 data-plasmic-name={"footer"}
                 data-plasmic-override={overrides.footer}
@@ -93,8 +104,9 @@ function PlasmicTerminiCondizioni__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header2", "footer"],
+  root: ["root", "header2", "text", "footer"],
   header2: ["header2"],
+  text: ["text"],
   footer: ["footer"]
 };
 
@@ -132,6 +144,7 @@ export const PlasmicTerminiCondizioni = Object.assign(
   {
     // Helper components rendering sub-elements
     header2: makeNodeComponent("header2"),
+    text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicTerminiCondizioni
     internalVariantProps: PlasmicTerminiCondizioni__VariantProps,

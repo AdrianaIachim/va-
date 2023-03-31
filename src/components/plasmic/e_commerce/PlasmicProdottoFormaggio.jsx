@@ -32,7 +32,7 @@ import sty from "./PlasmicProdottoFormaggio.module.css"; // plasmic-import: wf3p
 import LeftArrowSvgrepoComsvgIcon from "./icons/PlasmicIcon__LeftArrowSvgrepoComsvg"; // plasmic-import: BLG2WTl0koydmQ/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: Z9yWUb_XEPOXSj/icon
 import header5JpgVk99NncPi5Mx8 from "./images/header5Jpg.jpg"; // plasmic-import: Vk99NNC-Pi5MX8/picture
-import plant6LgwebpGl4TZ2Ww7BvxJa from "./images/plant6Lgwebp.webp"; // plasmic-import: GL4tZ2WW7BvxJA/picture
+import mozzarellapngU2OMCx9D from "./images/mozzarellapng.png"; // plasmic-import: u2o-MCx9D/picture
 import galinaNMiziNqvJx5MUnsplashjpgEcSqGTgu0W52S from "./images/galinaNMiziNqvJx5MUnsplashjpg.jpg"; // plasmic-import: EcSqG-tgu0W52s/picture
 import igorSonFvPxCqgtwcUnsplashjpgIrMvGDzufn8Kk from "./images/igorSonFvPxCqgtwcUnsplashjpg.jpg"; // plasmic-import: IrMvG_dzufn8Kk/picture
 import scottWebbORwRlTgBrPoUnsplashjpgP2BhvYxT2EpXaQ from "./images/scottWebbORwRlTgBrPoUnsplashjpg.jpg"; // plasmic-import: p2BhvYxT2EpXaQ/picture
@@ -230,9 +230,9 @@ function PlasmicProdottoFormaggio__RenderFunc(props) {
                               displayWidth={"auto"}
                               loading={"lazy"}
                               src={{
-                                src: plant6LgwebpGl4TZ2Ww7BvxJa,
-                                fullWidth: 900,
-                                fullHeight: 900,
+                                src: mozzarellapngU2OMCx9D,
+                                fullWidth: 652,
+                                fullHeight: 480,
                                 aspectRatio: undefined
                               }}
                             />
@@ -255,7 +255,7 @@ function PlasmicProdottoFormaggio__RenderFunc(props) {
                                 sty.h3
                               )}
                             >
-                              {"Fico"}
+                              {"Mozzarella"}
                             </h3>
                             <div
                               className={classNames(
@@ -264,7 +264,7 @@ function PlasmicProdottoFormaggio__RenderFunc(props) {
                                 sty.text__qEa8W
                               )}
                             >
-                              {"PIANTE"}
+                              {"FORMAGGIO"}
                             </div>
                             <h5
                               className={classNames(
