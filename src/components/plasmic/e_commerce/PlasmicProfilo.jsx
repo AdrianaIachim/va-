@@ -14,12 +14,10 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Header2 from "../../Header2"; // plasmic-import: ymsmsqowiD_hX8/component
 import Footer from "../../Footer"; // plasmic-import: GewF2Qmnx2xftX/component
-import { useScreenVariants as useScreenVariantscf27W7HxUbhqT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -CF27w7hxUbhqT/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
@@ -55,49 +53,49 @@ function PlasmicProfilo__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "textbox.textboxValue",
+        path: "textbox.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
       },
       {
-        path: "textbox2.textbox2Value",
+        path: "textbox2.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
       },
       {
-        path: "textbox3.textbox3Value",
+        path: "textbox3.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
       },
       {
-        path: "textbox4.textbox4Value",
+        path: "textbox4.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
       },
       {
-        path: "textbox5.textbox4Value",
+        path: "textbox5.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
       },
       {
-        path: "textbox6.textbox4Value",
+        path: "textbox6.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
       },
       {
-        path: "textbox7.textbox4Value",
+        path: "textbox7.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
       },
       {
-        path: "textbox8.textbox7Value",
+        path: "textbox8.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
@@ -108,354 +106,340 @@ function PlasmicProfilo__RenderFunc(props) {
   );
 
   const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscf27W7HxUbhqT()
-  });
   return (
-    <p.PlasmicPageGuard
-      minRole={null}
-      appId={"2GyyV1uN4xbnqKtJ7pjrQU"}
-      authorizeEndpoint={"https://studio.plasmic.app/authorize"}
-      canTriggerLogin={true}
-    >
-      <React.Fragment>
-        <div className={projectcss.plasmic_page_wrapper}>
-          <div
-            data-plasmic-name={"root"}
-            data-plasmic-override={overrides.root}
-            data-plasmic-root={true}
-            data-plasmic-for-node={forNode}
-            className={classNames(
-              projectcss.all,
-              projectcss.root_reset,
-              projectcss.plasmic_default_styles,
-              projectcss.plasmic_mixins,
-              projectcss.plasmic_tokens,
-              plasmic_library_plasmic_color_type_css.plasmic_tokens,
-              sty.root
-            )}
-          >
-            <Header2
-              data-plasmic-name={"header2"}
-              data-plasmic-override={overrides.header2}
-              className={classNames("__wab_instance", sty.header2)}
-            />
+    <React.Fragment>
+      <div className={projectcss.plasmic_page_wrapper}>
+        <div
+          data-plasmic-name={"root"}
+          data-plasmic-override={overrides.root}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            plasmic_library_plasmic_color_type_css.plasmic_tokens,
+            sty.root
+          )}
+        >
+          <Header2
+            data-plasmic-name={"header2"}
+            data-plasmic-override={overrides.header2}
+            className={classNames("__wab_instance", sty.header2)}
+          />
 
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns)}
-            >
-              <div className={classNames(projectcss.all, sty.column__n8PD)}>
-                <p.PlasmicImg
-                  data-plasmic-name={"img"}
-                  data-plasmic-override={overrides.img}
-                  alt={""}
-                  className={classNames(sty.img)}
-                  displayHeight={"100%"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: photo14387616810336461Ffad8D80JpgMvDs8LUPt,
-                    fullWidth: 1000,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.column__wHtH)}>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__ba90T)}
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"columns"}
+            data-plasmic-override={overrides.columns}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.columns)}
+          >
+            <div className={classNames(projectcss.all, sty.column__n8PD)}>
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"100%"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100%"}
+                loading={"lazy"}
+                src={{
+                  src: photo14387616810336461Ffad8D80JpgMvDs8LUPt,
+                  fullWidth: 1000,
+                  fullHeight: 667,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+            <div className={classNames(projectcss.all, sty.column__wHtH)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__ba90T)}
+              >
+                <h2
+                  data-plasmic-name={"h2"}
+                  data-plasmic-override={overrides.h2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2
+                  )}
                 >
-                  <h2
-                    data-plasmic-name={"h2"}
-                    data-plasmic-override={overrides.h2}
+                  {"PROFILO"}
+                </h2>
+                <div className={classNames(projectcss.all, sty.freeBox__mjYH)}>
+                  {true ? (
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__ljqx)}
+                    >
+                      <input
+                        data-plasmic-name={"textbox"}
+                        data-plasmic-override={overrides.textbox}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          sty.textbox
+                        )}
+                        onChange={e => {
+                          p.generateStateOnChangeProp($state, [
+                            "textbox",
+                            "value"
+                          ])(e.target.value);
+                        }}
+                        placeholder={"Nome"}
+                        ref={ref => {
+                          $refs["textbox"] = ref;
+                        }}
+                        size={1}
+                        type={"text"}
+                        value={p.generateStateValueProp($state, [
+                          "textbox",
+                          "value"
+                        ])}
+                      />
+
+                      <input
+                        data-plasmic-name={"textbox2"}
+                        data-plasmic-override={overrides.textbox2}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          sty.textbox2
+                        )}
+                        onChange={e => {
+                          p.generateStateOnChangeProp($state, [
+                            "textbox2",
+                            "value"
+                          ])(e.target.value);
+                        }}
+                        placeholder={"Cognome"}
+                        ref={ref => {
+                          $refs["textbox2"] = ref;
+                        }}
+                        size={1}
+                        type={"text"}
+                        value={p.generateStateValueProp($state, [
+                          "textbox2",
+                          "value"
+                        ])}
+                      />
+                    </p.Stack>
+                  ) : null}
+                  <input
+                    data-plasmic-name={"textbox3"}
+                    data-plasmic-override={overrides.textbox3}
                     className={classNames(
                       projectcss.all,
-                      projectcss.h2,
-                      projectcss.__wab_text,
-                      sty.h2
+                      projectcss.input,
+                      sty.textbox3
                     )}
-                  >
-                    {"PROFILO"}
-                  </h2>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__mjYH)}
-                  >
-                    {true ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ljqx
-                        )}
-                      >
-                        <input
-                          data-plasmic-name={"textbox"}
-                          data-plasmic-override={overrides.textbox}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.input,
-                            sty.textbox
-                          )}
-                          onChange={e => {
-                            p.generateStateOnChangeProp($state, [
-                              "textbox",
-                              "textboxValue"
-                            ])(e.target.value);
-                          }}
-                          placeholder={"Nome"}
-                          ref={ref => {
-                            $refs["textbox"] = ref;
-                          }}
-                          size={1}
-                          type={"text"}
-                          value={p.generateStateValueProp($state, [
-                            "textbox",
-                            "textboxValue"
-                          ])}
-                        />
-
-                        <input
-                          data-plasmic-name={"textbox2"}
-                          data-plasmic-override={overrides.textbox2}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.input,
-                            sty.textbox2
-                          )}
-                          onChange={e => {
-                            p.generateStateOnChangeProp($state, [
-                              "textbox2",
-                              "textbox2Value"
-                            ])(e.target.value);
-                          }}
-                          placeholder={"Cognome"}
-                          ref={ref => {
-                            $refs["textbox2"] = ref;
-                          }}
-                          size={1}
-                          type={"text"}
-                          value={p.generateStateValueProp($state, [
-                            "textbox2",
-                            "textbox2Value"
-                          ])}
-                        />
-                      </p.Stack>
-                    ) : null}
-                    <input
-                      data-plasmic-name={"textbox3"}
-                      data-plasmic-override={overrides.textbox3}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.input,
-                        sty.textbox3
-                      )}
-                      onChange={e => {
-                        p.generateStateOnChangeProp($state, [
-                          "textbox3",
-                          "textbox3Value"
-                        ])(e.target.value);
-                      }}
-                      placeholder={"Email"}
-                      ref={ref => {
-                        $refs["textbox3"] = ref;
-                      }}
-                      size={1}
-                      type={"text"}
-                      value={p.generateStateValueProp($state, [
+                    onChange={e => {
+                      p.generateStateOnChangeProp($state, [
                         "textbox3",
-                        "textbox3Value"
-                      ])}
-                    />
+                        "value"
+                      ])(e.target.value);
+                    }}
+                    placeholder={"Email"}
+                    ref={ref => {
+                      $refs["textbox3"] = ref;
+                    }}
+                    size={1}
+                    type={"text"}
+                    value={p.generateStateValueProp($state, [
+                      "textbox3",
+                      "value"
+                    ])}
+                  />
 
-                    <input
-                      data-plasmic-name={"textbox4"}
-                      data-plasmic-override={overrides.textbox4}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.input,
-                        sty.textbox4
-                      )}
-                      onChange={e => {
-                        p.generateStateOnChangeProp($state, [
-                          "textbox4",
-                          "textbox4Value"
-                        ])(e.target.value);
-                      }}
-                      placeholder={"Numero di Telefono"}
-                      ref={ref => {
-                        $refs["textbox4"] = ref;
-                      }}
-                      size={1}
-                      type={"text"}
-                      value={p.generateStateValueProp($state, [
+                  <input
+                    data-plasmic-name={"textbox4"}
+                    data-plasmic-override={overrides.textbox4}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.input,
+                      sty.textbox4
+                    )}
+                    onChange={e => {
+                      p.generateStateOnChangeProp($state, [
                         "textbox4",
-                        "textbox4Value"
-                      ])}
-                    />
+                        "value"
+                      ])(e.target.value);
+                    }}
+                    placeholder={"Numero di Telefono"}
+                    ref={ref => {
+                      $refs["textbox4"] = ref;
+                    }}
+                    size={1}
+                    type={"text"}
+                    value={p.generateStateValueProp($state, [
+                      "textbox4",
+                      "value"
+                    ])}
+                  />
 
-                    <input
-                      data-plasmic-name={"textbox5"}
-                      data-plasmic-override={overrides.textbox5}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.input,
-                        sty.textbox5
-                      )}
-                      onChange={e => {
-                        p.generateStateOnChangeProp($state, [
-                          "textbox5",
-                          "textbox4Value"
-                        ])(e.target.value);
-                      }}
-                      placeholder={"Indirizzo di Residenza"}
-                      ref={ref => {
-                        $refs["textbox5"] = ref;
-                      }}
-                      size={1}
-                      type={"text"}
-                      value={p.generateStateValueProp($state, [
+                  <input
+                    data-plasmic-name={"textbox5"}
+                    data-plasmic-override={overrides.textbox5}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.input,
+                      sty.textbox5
+                    )}
+                    onChange={e => {
+                      p.generateStateOnChangeProp($state, [
                         "textbox5",
-                        "textbox4Value"
-                      ])}
-                    />
+                        "value"
+                      ])(e.target.value);
+                    }}
+                    placeholder={"Indirizzo di Residenza"}
+                    ref={ref => {
+                      $refs["textbox5"] = ref;
+                    }}
+                    size={1}
+                    type={"text"}
+                    value={p.generateStateValueProp($state, [
+                      "textbox5",
+                      "value"
+                    ])}
+                  />
 
-                    <input
-                      data-plasmic-name={"textbox6"}
-                      data-plasmic-override={overrides.textbox6}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.input,
-                        sty.textbox6
-                      )}
-                      onChange={e => {
-                        p.generateStateOnChangeProp($state, [
-                          "textbox6",
-                          "textbox4Value"
-                        ])(e.target.value);
-                      }}
-                      placeholder={"Genere"}
-                      ref={ref => {
-                        $refs["textbox6"] = ref;
-                      }}
-                      size={1}
-                      type={"text"}
-                      value={p.generateStateValueProp($state, [
+                  <input
+                    data-plasmic-name={"textbox6"}
+                    data-plasmic-override={overrides.textbox6}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.input,
+                      sty.textbox6
+                    )}
+                    onChange={e => {
+                      p.generateStateOnChangeProp($state, [
                         "textbox6",
-                        "textbox4Value"
-                      ])}
-                    />
+                        "value"
+                      ])(e.target.value);
+                    }}
+                    placeholder={"Genere"}
+                    ref={ref => {
+                      $refs["textbox6"] = ref;
+                    }}
+                    size={1}
+                    type={"text"}
+                    value={p.generateStateValueProp($state, [
+                      "textbox6",
+                      "value"
+                    ])}
+                  />
 
-                    <input
-                      data-plasmic-name={"textbox7"}
-                      data-plasmic-override={overrides.textbox7}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.input,
-                        sty.textbox7
-                      )}
-                      onChange={e => {
-                        p.generateStateOnChangeProp($state, [
-                          "textbox7",
-                          "textbox4Value"
-                        ])(e.target.value);
-                      }}
-                      placeholder={"Data di Nascita"}
-                      ref={ref => {
-                        $refs["textbox7"] = ref;
-                      }}
-                      size={1}
-                      type={"text"}
-                      value={p.generateStateValueProp($state, [
+                  <input
+                    data-plasmic-name={"textbox7"}
+                    data-plasmic-override={overrides.textbox7}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.input,
+                      sty.textbox7
+                    )}
+                    onChange={e => {
+                      p.generateStateOnChangeProp($state, [
                         "textbox7",
-                        "textbox4Value"
-                      ])}
-                    />
+                        "value"
+                      ])(e.target.value);
+                    }}
+                    placeholder={"Data di Nascita"}
+                    ref={ref => {
+                      $refs["textbox7"] = ref;
+                    }}
+                    size={1}
+                    type={"text"}
+                    value={p.generateStateValueProp($state, [
+                      "textbox7",
+                      "value"
+                    ])}
+                  />
 
-                    <input
-                      data-plasmic-name={"textbox8"}
-                      data-plasmic-override={overrides.textbox8}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.input,
-                        sty.textbox8
-                      )}
-                      onChange={e => {
-                        p.generateStateOnChangeProp($state, [
-                          "textbox8",
-                          "textbox7Value"
-                        ])(e.target.value);
-                      }}
-                      placeholder={"Codice Fiscale"}
-                      ref={ref => {
-                        $refs["textbox8"] = ref;
-                      }}
-                      size={1}
-                      type={"text"}
-                      value={p.generateStateValueProp($state, [
+                  <input
+                    data-plasmic-name={"textbox8"}
+                    data-plasmic-override={overrides.textbox8}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.input,
+                      sty.textbox8
+                    )}
+                    onChange={e => {
+                      p.generateStateOnChangeProp($state, [
                         "textbox8",
-                        "textbox7Value"
-                      ])}
-                    />
+                        "value"
+                      ])(e.target.value);
+                    }}
+                    placeholder={"Codice Fiscale"}
+                    ref={ref => {
+                      $refs["textbox8"] = ref;
+                    }}
+                    size={1}
+                    type={"text"}
+                    value={p.generateStateValueProp($state, [
+                      "textbox8",
+                      "value"
+                    ])}
+                  />
 
-                    <p.Stack
-                      as={"a"}
-                      data-plasmic-name={"link"}
-                      data-plasmic-override={overrides.link}
-                      hasGap={true}
+                  <p.Stack
+                    as={"a"}
+                    data-plasmic-name={"link"}
+                    data-plasmic-override={overrides.link}
+                    hasGap={true}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link
+                    )}
+                    href={`/Home`}
+                  >
+                    {false ? (
+                      <Icon4Icon
+                        className={classNames(projectcss.all, sty.svg__f1FKc)}
+                        role={"img"}
+                      />
+                    ) : null}
+                    <div
+                      data-plasmic-name={"text"}
+                      data-plasmic-override={overrides.text}
                       className={classNames(
                         projectcss.all,
-                        projectcss.a,
-                        sty.link
+                        projectcss.__wab_text,
+                        sty.text
                       )}
                     >
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__f1FKc)}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        data-plasmic-name={"text"}
-                        data-plasmic-override={overrides.text}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text
-                        )}
-                      >
-                        {"Send"}
-                      </div>
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__pwfYx)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </p.Stack>
-                  </div>
-                </p.Stack>
-              </div>
-            </p.Stack>
-            <Footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames("__wab_instance", sty.footer)}
-            />
-          </div>
+                      {"Conferma"}
+                    </div>
+                    {false ? (
+                      <Icon4Icon
+                        className={classNames(projectcss.all, sty.svg__pwfYx)}
+                        role={"img"}
+                      />
+                    ) : null}
+                  </p.Stack>
+                </div>
+              </p.Stack>
+            </div>
+          </p.Stack>
+          <Footer
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames("__wab_instance", sty.footer)}
+          />
         </div>
-      </React.Fragment>
-    </p.PlasmicPageGuard>
+      </div>
+    </React.Fragment>
   );
 }
 
@@ -539,9 +523,24 @@ function makeNodeComponent(nodeName) {
   return func;
 }
 
+function withPlasmicPageGuard(WrappedComponent) {
+  const PageGuard = props => (
+    <p.PlasmicPageGuard
+      minRole={null}
+      appId={"2GyyV1uN4xbnqKtJ7pjrQU"}
+      authorizeEndpoint={"https://studio.plasmic.app/authorize"}
+      canTriggerLogin={true}
+    >
+      <WrappedComponent {...props} />
+    </p.PlasmicPageGuard>
+  );
+
+  return PageGuard;
+}
+
 export const PlasmicProfilo = Object.assign(
   // Top-level PlasmicProfilo renders the root element
-  makeNodeComponent("root"),
+  withPlasmicPageGuard(makeNodeComponent("root")),
   {
     // Helper components rendering sub-elements
     header2: makeNodeComponent("header2"),

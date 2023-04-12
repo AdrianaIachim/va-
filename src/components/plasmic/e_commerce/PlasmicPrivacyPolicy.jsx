@@ -17,11 +17,14 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Header2 from "../../Header2"; // plasmic-import: ymsmsqowiD_hX8/component
+import Button from "../../Button"; // plasmic-import: _fVUBuH_zTPtNr/component
 import Footer from "../../Footer"; // plasmic-import: GewF2Qmnx2xftX/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
 import sty from "./PlasmicPrivacyPolicy.module.css"; // plasmic-import: 0727Bpzvzd/css
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: 5ELsae-rPxEAZc/icon
+import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: dKQnY774Exf/icon
 
 export const PlasmicPrivacyPolicy__VariantProps = new Array();
 
@@ -49,50 +52,115 @@ function PlasmicPrivacyPolicy__RenderFunc(props) {
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
-    <p.PlasmicPageGuard
-      minRole={null}
-      appId={"2GyyV1uN4xbnqKtJ7pjrQU"}
-      authorizeEndpoint={"https://studio.plasmic.app/authorize"}
-      canTriggerLogin={true}
-    >
-      <React.Fragment>
-        <div className={projectcss.plasmic_page_wrapper}>
-          <div
-            data-plasmic-name={"root"}
-            data-plasmic-override={overrides.root}
-            data-plasmic-root={true}
-            data-plasmic-for-node={forNode}
-            className={classNames(
-              projectcss.all,
-              projectcss.root_reset,
-              projectcss.plasmic_default_styles,
-              projectcss.plasmic_mixins,
-              projectcss.plasmic_tokens,
-              plasmic_library_plasmic_color_type_css.plasmic_tokens,
-              sty.root
-            )}
-          >
-            <Header2
-              data-plasmic-name={"header2"}
-              data-plasmic-override={overrides.header2}
-              className={classNames("__wab_instance", sty.header2)}
-            />
+    <React.Fragment>
+      <div className={projectcss.plasmic_page_wrapper}>
+        <div
+          data-plasmic-name={"root"}
+          data-plasmic-override={overrides.root}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            plasmic_library_plasmic_color_type_css.plasmic_tokens,
+            sty.root
+          )}
+        >
+          <Header2
+            data-plasmic-name={"header2"}
+            data-plasmic-override={overrides.header2}
+            className={classNames("__wab_instance", sty.header2)}
+          />
 
-            <Footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames("__wab_instance", sty.footer)}
-            />
+          <div className={classNames(projectcss.all, sty.freeBox__wfQg3)}>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns)}
+            >
+              <div
+                data-plasmic-name={"column"}
+                data-plasmic-override={overrides.column}
+                className={classNames(projectcss.all, sty.column)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__lLm5I)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___90Wgh
+                    )}
+                  >
+                    {"Privacy Policy"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ai5Qp
+                    )}
+                  >
+                    {
+                      "Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie, consulta la cookie privacy. Chiudendo questo banner, scorrendo questa pagina, cliccando su un link o proseguendo la navigazione in altra maniera, acconsenti all’uso dei cookie"
+                    }
+                  </div>
+                  <Button
+                    data-plasmic-name={"button"}
+                    data-plasmic-override={overrides.button}
+                    className={classNames("__wab_instance", sty.button)}
+                    endIcon={
+                      <Icon38Icon
+                        className={classNames(projectcss.all, sty.svg___15SbR)}
+                        role={"img"}
+                      />
+                    }
+                    startIcon={
+                      <ChecksvgIcon
+                        className={classNames(projectcss.all, sty.svg__dmK9H)}
+                        role={"img"}
+                      />
+                    }
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__uXpzy
+                      )}
+                    >
+                      {""}
+                    </div>
+                  </Button>
+                </p.Stack>
+              </div>
+            </p.Stack>
           </div>
+          <Footer
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames("__wab_instance", sty.footer)}
+          />
         </div>
-      </React.Fragment>
-    </p.PlasmicPageGuard>
+      </div>
+    </React.Fragment>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header2", "footer"],
+  root: ["root", "header2", "columns", "column", "button", "footer"],
   header2: ["header2"],
+  columns: ["columns", "column", "button"],
+  column: ["column", "button"],
+  button: ["button"],
   footer: ["footer"]
 };
 
@@ -124,12 +192,30 @@ function makeNodeComponent(nodeName) {
   return func;
 }
 
+function withPlasmicPageGuard(WrappedComponent) {
+  const PageGuard = props => (
+    <p.PlasmicPageGuard
+      minRole={null}
+      appId={"2GyyV1uN4xbnqKtJ7pjrQU"}
+      authorizeEndpoint={"https://studio.plasmic.app/authorize"}
+      canTriggerLogin={true}
+    >
+      <WrappedComponent {...props} />
+    </p.PlasmicPageGuard>
+  );
+
+  return PageGuard;
+}
+
 export const PlasmicPrivacyPolicy = Object.assign(
   // Top-level PlasmicPrivacyPolicy renders the root element
-  makeNodeComponent("root"),
+  withPlasmicPageGuard(makeNodeComponent("root")),
   {
     // Helper components rendering sub-elements
     header2: makeNodeComponent("header2"),
+    columns: makeNodeComponent("columns"),
+    column: makeNodeComponent("column"),
+    button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicPrivacyPolicy
     internalVariantProps: PlasmicPrivacyPolicy__VariantProps,

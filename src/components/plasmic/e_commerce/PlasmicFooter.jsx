@@ -12,14 +12,11 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import MenuButton from "../../MenuButton"; // plasmic-import: Qab3DN1TM8pM2X/component
-import { useScreenVariants as useScreenVariantscf27W7HxUbhqT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -CF27w7hxUbhqT/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
@@ -50,9 +47,6 @@ function PlasmicFooter__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscf27W7HxUbhqT()
-  });
   return (
     <div
       data-plasmic-name={"root"}
@@ -90,7 +84,7 @@ function PlasmicFooter__RenderFunc(props) {
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox___2I0Ko)}
         >
-          {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+          {true ? (
             <MenuButton
               data-plasmic-name={"menuButton"}
               data-plasmic-override={overrides.menuButton}
@@ -110,7 +104,7 @@ function PlasmicFooter__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.link___5WUmx
                 )}
-                href={`/HO`}
+                href={`/Home`}
               >
                 {"Home"}
               </a>
@@ -121,7 +115,6 @@ function PlasmicFooter__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.link__iMnu5
                 )}
-                href={`/GestioneOrdini`}
               >
                 {"Gestione Ordini"}
               </a>

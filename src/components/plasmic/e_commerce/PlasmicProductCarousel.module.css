@@ -47,6 +47,17 @@
   > img {
   margin-top: 12px;
 }
+.freeBox__blAlQ {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #0000002e;
+  min-width: 0;
+  padding: 32px 24px;
+}
 .text__bn32 {
   position: relative;
   font-size: 28px;
@@ -84,6 +95,14 @@
   > img {
   margin-left: 8px;
 }
+.freeBox__lUd1 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(24px + 12px) !important;
+}
 .linkButton:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
@@ -109,6 +128,13 @@
   > picture
   > img {
   margin-left: 10px;
+}
+.freeBox__z9Ux0 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .svg__ff07I {
   position: relative;

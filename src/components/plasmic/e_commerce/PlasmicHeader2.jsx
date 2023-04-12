@@ -12,15 +12,11 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
-import MenuButton from "../../MenuButton"; // plasmic-import: Qab3DN1TM8pM2X/component
 import IconLink from "../../IconLink"; // plasmic-import: mdlB7opZfCK7nb/component
-import { useScreenVariants as useScreenVariantscf27W7HxUbhqT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -CF27w7hxUbhqT/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
@@ -53,9 +49,6 @@ function PlasmicHeader2__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscf27W7HxUbhqT()
-  });
   return true ? (
     <p.Stack
       as={"div"}
@@ -74,13 +67,6 @@ function PlasmicHeader2__RenderFunc(props) {
         sty.root
       )}
     >
-      {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-        <MenuButton
-          data-plasmic-name={"menuButton"}
-          data-plasmic-override={overrides.menuButton}
-          className={classNames("__wab_instance", sty.menuButton)}
-        />
-      ) : null}
       {true ? (
         <a
           className={classNames(projectcss.all, projectcss.a, sty.link__fSx36)}
@@ -99,7 +85,7 @@ function PlasmicHeader2__RenderFunc(props) {
           projectcss.__wab_text,
           sty.link___4QSB
         )}
-        href={`/HO`}
+        href={`/Home`}
       >
         {"Home"}
       </a>
@@ -110,7 +96,7 @@ function PlasmicHeader2__RenderFunc(props) {
           projectcss.__wab_text,
           sty.link__xtOpW
         )}
-        href={`/GestioneOrdini`}
+        href={`/gestione-ordini`}
       >
         {"Gestione Ordini"}
       </a>
@@ -123,9 +109,7 @@ function PlasmicHeader2__RenderFunc(props) {
         )}
         href={`/catalogo`}
       >
-        {hasVariant(globalVariants, "screen", "mobile")
-          ? "Catalogo"
-          : "Catalogo"}
+        {"Catalogo"}
       </a>
       <p.Stack
         as={"div"}
@@ -138,6 +122,7 @@ function PlasmicHeader2__RenderFunc(props) {
           data-plasmic-name={"iconLink"}
           data-plasmic-override={overrides.iconLink}
           className={classNames("__wab_instance", sty.iconLink)}
+          href={`/Carrello`}
           icon={
             <React.Fragment>
               <IconIcon
@@ -165,8 +150,7 @@ function PlasmicHeader2__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menuButton", "freeBox", "iconLink", "text"],
-  menuButton: ["menuButton"],
+  root: ["root", "freeBox", "iconLink", "text"],
   freeBox: ["freeBox", "iconLink", "text"],
   iconLink: ["iconLink", "text"],
   text: ["text"]
@@ -205,7 +189,6 @@ export const PlasmicHeader2 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    menuButton: makeNodeComponent("menuButton"),
     freeBox: makeNodeComponent("freeBox"),
     iconLink: makeNodeComponent("iconLink"),
     text: makeNodeComponent("text"),

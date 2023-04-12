@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.249",
+    "@plasmicapp/cli": "^0.1.257",
     "@plasmicapp/host": "^1.0.120",
     "@plasmicapp/react-web": "^0.2.188",
+    "@plasmicpkgs/lottie-react": "^0.0.110",
+    "@plasmicpkgs/plasmic-embed-css": "^0.1.109",
+    "@plasmicpkgs/plasmic-tabs": "^0.0.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

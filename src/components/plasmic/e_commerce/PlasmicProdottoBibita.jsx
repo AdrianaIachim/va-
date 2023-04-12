@@ -12,15 +12,12 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Header3 from "../../Header3"; // plasmic-import: iGqVXRH7Uc/component
 import Footer from "../../Footer"; // plasmic-import: GewF2Qmnx2xftX/component
-import { useScreenVariants as useScreenVariantscf27W7HxUbhqT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -CF27w7hxUbhqT/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
@@ -69,275 +66,234 @@ function PlasmicProdottoBibita__RenderFunc(props) {
   );
 
   const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscf27W7HxUbhqT()
-  });
   return (
-    <p.PlasmicPageGuard
-      minRole={null}
-      appId={"2GyyV1uN4xbnqKtJ7pjrQU"}
-      authorizeEndpoint={"https://studio.plasmic.app/authorize"}
-      canTriggerLogin={true}
-    >
-      <React.Fragment>
-        <div className={projectcss.plasmic_page_wrapper}>
-          <div
-            data-plasmic-name={"root"}
-            data-plasmic-override={overrides.root}
-            data-plasmic-root={true}
-            data-plasmic-for-node={forNode}
-            className={classNames(
-              projectcss.all,
-              projectcss.root_reset,
-              projectcss.plasmic_default_styles,
-              projectcss.plasmic_mixins,
-              projectcss.plasmic_tokens,
-              plasmic_library_plasmic_color_type_css.plasmic_tokens,
-              sty.root
-            )}
-          >
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__v9RDn)}>
-                {true ? (
+    <React.Fragment>
+      <div className={projectcss.plasmic_page_wrapper}>
+        <div
+          data-plasmic-name={"root"}
+          data-plasmic-override={overrides.root}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            plasmic_library_plasmic_color_type_css.plasmic_tokens,
+            sty.root
+          )}
+        >
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__v9RDn)}>
+              {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__xrmt)}>
+                  {true ? (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__nWoc6)}
+                      displayHeight={"100%"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"35%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: header5JpgVk99NncPi5Mx8,
+                        fullWidth: 502,
+                        fullHeight: 872,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  ) : null}
+                  {true ? (
+                    <Header3
+                      data-plasmic-name={"header3"}
+                      data-plasmic-override={overrides.header3}
+                      className={classNames("__wab_instance", sty.header3)}
+                    />
+                  ) : null}
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__xrmt)}
+                    className={classNames(projectcss.all, sty.freeBox__tarcB)}
                   >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobile")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__nWoc6)}
-                        displayHeight={"100%"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"35%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"100%"}
-                        loading={"lazy"}
-                        src={{
-                          src: header5JpgVk99NncPi5Mx8,
-                          fullWidth: 502,
-                          fullHeight: 872,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    ) : null}
                     {true ? (
-                      <Header3
-                        data-plasmic-name={"header3"}
-                        data-plasmic-override={overrides.header3}
-                        className={classNames("__wab_instance", sty.header3)}
-                      />
+                      <p.Stack
+                        as={"a"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__riDu
+                        )}
+                        href={`/catalogo`}
+                      >
+                        <LeftArrowSvgrepoComsvgIcon
+                          className={classNames(projectcss.all, sty.svg__mFeZo)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__u5DV8
+                          )}
+                        >
+                          {"HOME"}
+                        </div>
+                      </p.Stack>
                     ) : null}
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__tarcB)}
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"foreground2"}
+                      data-plasmic-override={overrides.foreground2}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.foreground2)}
                     >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobile")
-                          ? true
-                          : true
-                      ) ? (
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"columns"}
+                        data-plasmic-override={overrides.columns}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.columns)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column___1Aqo
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__isP8A)}
+                            displayHeight={"673px"}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"auto"}
+                            loading={"lazy"}
+                            src={{
+                              src: acquapngVm8DXQ6U,
+                              fullWidth: 381,
+                              fullHeight: 1093,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        </div>
                         <p.Stack
-                          as={"a"}
+                          as={"div"}
                           hasGap={true}
                           className={classNames(
                             projectcss.all,
-                            projectcss.a,
-                            sty.link__riDu
+                            sty.column__xLvPg
                           )}
                         >
-                          <LeftArrowSvgrepoComsvgIcon
+                          <h3
+                            data-plasmic-name={"h3"}
+                            data-plasmic-override={overrides.h3}
                             className={classNames(
                               projectcss.all,
-                              sty.svg__mFeZo
+                              projectcss.h3,
+                              projectcss.__wab_text,
+                              sty.h3
                             )}
-                            role={"img"}
-                          />
-
+                          >
+                            {"Fico"}
+                          </h3>
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__u5DV8
+                              sty.text__mtIdB
                             )}
                           >
-                            {hasVariant(globalVariants, "screen", "mobile")
-                              ? "see all products"
-                              : "HOME"}
+                            {"PIANTE"}
                           </div>
-                        </p.Stack>
-                      ) : null}
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"foreground2"}
-                        data-plasmic-override={overrides.foreground2}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.foreground2)}
-                      >
-                        <p.Stack
-                          as={"div"}
-                          data-plasmic-name={"columns"}
-                          data-plasmic-override={overrides.columns}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.columns)}
-                        >
+                          <h5
+                            data-plasmic-name={"h5"}
+                            data-plasmic-override={overrides.h5}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h5,
+                              projectcss.__wab_text,
+                              sty.h5
+                            )}
+                          >
+                            {"$10.00"}
+                          </h5>
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.column___1Aqo
+                              sty.freeBox__w37Yd
                             )}
                           >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__isP8A)}
-                              displayHeight={"673px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"auto"}
-                              loading={"lazy"}
-                              src={{
-                                src: acquapngVm8DXQ6U,
-                                fullWidth: 381,
-                                fullHeight: 1093,
-                                aspectRatio: undefined
-                              }}
-                            />
-                          </div>
-                          <p.Stack
-                            as={"div"}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.column__xLvPg
-                            )}
-                          >
-                            <h3
-                              data-plasmic-name={"h3"}
-                              data-plasmic-override={overrides.h3}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3
-                              )}
-                            >
-                              {"Fico"}
-                            </h3>
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__mtIdB
+                                sty.text__lYlZl
                               )}
                             >
-                              {"PIANTE"}
+                              {"Ficus"}
                             </div>
-                            <h5
-                              data-plasmic-name={"h5"}
-                              data-plasmic-override={overrides.h5}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h5,
-                                projectcss.__wab_text,
-                                sty.h5
-                              )}
-                            >
-                              {"$10.00"}
-                            </h5>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__w37Yd
-                              )}
-                            >
+                            {true ? (
                               <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__lYlZl
+                                  sty.freeBox__z1QE
                                 )}
                               >
-                                {"Ficus"}
-                              </div>
-                              {(
-                                hasVariant(globalVariants, "screen", "mobile")
-                                  ? true
-                                  : true
-                              ) ? (
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.freeBox__z1QE
-                                  )}
-                                >
-                                  {(
-                                    hasVariant(
-                                      globalVariants,
-                                      "screen",
-                                      "mobile"
-                                    )
-                                      ? true
-                                      : true
-                                  ) ? (
-                                    <p.Stack
-                                      as={"a"}
-                                      hasGap={true}
+                                {true ? (
+                                  <p.Stack
+                                    as={"a"}
+                                    hasGap={true}
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.a,
+                                      sty.link___7TWpZ
+                                    )}
+                                    href={`/Carrello`}
+                                  >
+                                    <Icon3Icon
                                       className={classNames(
                                         projectcss.all,
-                                        projectcss.a,
-                                        sty.link___7TWpZ
+                                        sty.svg___3WTrQ
+                                      )}
+                                      role={"img"}
+                                    />
+
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text__gWfoq
                                       )}
                                     >
-                                      <Icon3Icon
-                                        className={classNames(
-                                          projectcss.all,
-                                          sty.svg___3WTrQ
-                                        )}
-                                        role={"img"}
-                                      />
-
-                                      <div
-                                        className={classNames(
-                                          projectcss.all,
-                                          projectcss.__wab_text,
-                                          sty.text__gWfoq
-                                        )}
-                                      >
-                                        {hasVariant(
-                                          globalVariants,
-                                          "screen",
-                                          "mobile"
-                                        )
-                                          ? "Discover"
-                                          : "Aggiungi al carrello"}
-                                      </div>
-                                    </p.Stack>
-                                  ) : null}
-                                </div>
-                              ) : null}
-                            </div>
-                          </p.Stack>
+                                      {"Aggiungi al carrello"}
+                                    </div>
+                                  </p.Stack>
+                                ) : null}
+                              </div>
+                            ) : null}
+                          </div>
                         </p.Stack>
                       </p.Stack>
-                    </div>
+                    </p.Stack>
                   </div>
-                ) : null}
-              </div>
-            ) : null}
-            <Footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames("__wab_instance", sty.footer)}
-            />
-          </div>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+          <Footer
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames("__wab_instance", sty.footer)}
+          />
         </div>
-      </React.Fragment>
-    </p.PlasmicPageGuard>
+      </div>
+    </React.Fragment>
   );
 }
 
@@ -379,9 +335,24 @@ function makeNodeComponent(nodeName) {
   return func;
 }
 
+function withPlasmicPageGuard(WrappedComponent) {
+  const PageGuard = props => (
+    <p.PlasmicPageGuard
+      minRole={null}
+      appId={"2GyyV1uN4xbnqKtJ7pjrQU"}
+      authorizeEndpoint={"https://studio.plasmic.app/authorize"}
+      canTriggerLogin={true}
+    >
+      <WrappedComponent {...props} />
+    </p.PlasmicPageGuard>
+  );
+
+  return PageGuard;
+}
+
 export const PlasmicProdottoBibita = Object.assign(
   // Top-level PlasmicProdottoBibita renders the root element
-  makeNodeComponent("root"),
+  withPlasmicPageGuard(makeNodeComponent("root")),
   {
     // Helper components rendering sub-elements
     header3: makeNodeComponent("header3"),

@@ -14,10 +14,8 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
-import { useScreenVariants as useScreenVariantscf27W7HxUbhqT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -CF27w7hxUbhqT/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
@@ -53,9 +51,6 @@ function PlasmicProductRow__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscf27W7HxUbhqT()
-  });
   return true ? (
     <p.Stack
       as={"div"}
@@ -205,24 +200,25 @@ function PlasmicProductRow__RenderFunc(props) {
         hasGap={true}
         className={classNames(projectcss.all, sty.column__zXcMa)}
       >
-        <p.PlasmicImg
-          alt={""}
-          className={classNames(sty.img__se4Gf)}
-          displayHeight={"270px /* plasmic-token: FrVxrO3xIVC8IA */"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"100%"}
-          loading={"lazy"}
-          src={{
-            src: plant5FeaturedjpgIgAcBQiM5Dwuip,
-            fullWidth: 400,
-            fullHeight: 400,
-            aspectRatio: undefined
-          }}
-        />
-
+        {true ? (
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__se4Gf)}
+            displayHeight={"270px /* plasmic-token: FrVxrO3xIVC8IA */"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"100%"}
+            loading={"lazy"}
+            src={{
+              src: plant5FeaturedjpgIgAcBQiM5Dwuip,
+              fullWidth: 400,
+              fullHeight: 400,
+              aspectRatio: undefined
+            }}
+          />
+        ) : null}
         {true ? (
           <div className={classNames(projectcss.all, sty.freeBox__kdWCe)}>
             <Icon3Icon

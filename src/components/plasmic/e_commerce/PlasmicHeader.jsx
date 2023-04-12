@@ -15,19 +15,16 @@ import {
   hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import MenuButton from "../../MenuButton"; // plasmic-import: Qab3DN1TM8pM2X/component
 import IconLink from "../../IconLink"; // plasmic-import: mdlB7opZfCK7nb/component
 import LinkButton from "../../LinkButton"; // plasmic-import: epUi-KTwCwraW0/component
-import { useScreenVariants as useScreenVariantscf27W7HxUbhqT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -CF27w7hxUbhqT/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
 import sty from "./PlasmicHeader.module.css"; // plasmic-import: Qc-AaHBNiJ4q-/css
 import PersonCirclesvgIcon from "./icons/PlasmicIcon__PersonCirclesvg"; // plasmic-import: WbN2i0RCJ/icon
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: hmD8pNWAqIyF8L/icon
 
 export const PlasmicHeader__VariantProps = new Array("expanded");
 
@@ -68,9 +65,6 @@ function PlasmicHeader__RenderFunc(props) {
   );
 
   const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscf27W7HxUbhqT()
-  });
   return (
     <div
       data-plasmic-name={"root"}
@@ -99,7 +93,7 @@ function PlasmicHeader__RenderFunc(props) {
           )
         })}
       >
-        {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+        {true ? (
           <MenuButton
             data-plasmic-name={"menuButton"}
             data-plasmic-override={overrides.menuButton}
@@ -110,12 +104,6 @@ function PlasmicHeader__RenderFunc(props) {
                 "expanded"
               )
             })}
-            expanded={
-              hasVariant($state, "expanded", "expanded") &&
-              hasVariant(globalVariants, "screen", "mobile")
-                ? true
-                : undefined
-            }
           />
         ) : null}
         {true ? (
@@ -128,93 +116,82 @@ function PlasmicHeader__RenderFunc(props) {
             href={`/profilo`}
           >
             <PersonCirclesvgIcon
-              className={classNames(projectcss.all, sty.svg__wdiSc)}
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              className={classNames(projectcss.all, sty.svg)}
               role={"img"}
             />
           </a>
         ) : null}
-        {(
-          hasVariant($state, "expanded", "expanded") &&
-          hasVariant(globalVariants, "screen", "mobile")
-            ? true
-            : hasVariant(globalVariants, "screen", "mobile")
-            ? true
-            : true
-        ) ? (
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__l9Vk3, {
-              [sty.freeBoxexpanded__l9Vk3Km7Ym]: hasVariant(
-                $state,
-                "expanded",
-                "expanded"
-              )
-            })}
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.freeBox__l9Vk3, {
+            [sty.freeBoxexpanded__l9Vk3Km7Ym]: hasVariant(
+              $state,
+              "expanded",
+              "expanded"
+            )
+          })}
+        >
+          <a
+            data-plasmic-name={"home"}
+            data-plasmic-override={overrides.home}
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.home
+            )}
+            href={`/Home`}
           >
-            <a
-              data-plasmic-name={"home"}
-              data-plasmic-override={overrides.home}
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.home
-              )}
-              href={`/HO`}
-            >
-              {"Home"}
-            </a>
-            <a
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link___4Mkvj
-              )}
-              href={`/GestioneOrdini`}
-            >
-              {"Gestione Ordini"}
-            </a>
-            <a
-              data-plasmic-name={"catalogo"}
-              data-plasmic-override={overrides.catalogo}
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.catalogo,
-                {
-                  [sty.catalogoexpanded]: hasVariant(
-                    $state,
-                    "expanded",
-                    "expanded"
-                  )
-                }
-              )}
-              href={"/catalogo"}
-              target={undefined}
-            >
-              {"Catalogo"}
-            </a>
-          </p.Stack>
-        ) : null}
+            {"Home"}
+          </a>
+          <a
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link___4Mkvj
+            )}
+            href={`/gestione-ordini`}
+          >
+            {"Gestione Ordini"}
+          </a>
+          <a
+            data-plasmic-name={"catalogo"}
+            data-plasmic-override={overrides.catalogo}
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.catalogo,
+              {
+                [sty.catalogoexpanded]: hasVariant(
+                  $state,
+                  "expanded",
+                  "expanded"
+                )
+              }
+            )}
+            href={"/catalogo"}
+            target={undefined}
+          >
+            {"Catalogo"}
+          </a>
+        </p.Stack>
         <p.Stack
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__lOvlk)}
         >
-          <IconLink
-            data-plasmic-name={"iconLink"}
-            data-plasmic-override={overrides.iconLink}
-            className={classNames("__wab_instance", sty.iconLink)}
-            icon={
-              <React.Fragment>
-                <IconIcon
-                  className={classNames(projectcss.all, sty.svg__rhRif)}
-                  role={"img"}
-                />
-
+          {true ? (
+            <IconLink
+              data-plasmic-name={"iconLink"}
+              data-plasmic-override={overrides.iconLink}
+              className={classNames("__wab_instance", sty.iconLink)}
+              href={`/Carrello`}
+              icon={
                 <div
                   data-plasmic-name={"text"}
                   data-plasmic-override={overrides.text}
@@ -226,17 +203,12 @@ function PlasmicHeader__RenderFunc(props) {
                 >
                   {"0"}
                 </div>
-              </React.Fragment>
-            }
-          />
+              }
+            />
+          ) : null}
         </p.Stack>
       </p.Stack>
-      {(
-        hasVariant($state, "expanded", "expanded") &&
-        hasVariant(globalVariants, "screen", "mobile")
-          ? true
-          : true
-      ) ? (
+      {true ? (
         <div
           className={classNames(projectcss.all, sty.freeBox__mAhyx, {
             [sty.freeBoxexpanded__mAhyXkm7Ym]: hasVariant(
@@ -282,8 +254,9 @@ function PlasmicHeader__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menuButton", "home", "catalogo", "iconLink", "text"],
+  root: ["root", "menuButton", "svg", "home", "catalogo", "iconLink", "text"],
   menuButton: ["menuButton"],
+  svg: ["svg"],
   home: ["home"],
   catalogo: ["catalogo"],
   iconLink: ["iconLink", "text"],
@@ -324,6 +297,7 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     menuButton: makeNodeComponent("menuButton"),
+    svg: makeNodeComponent("svg"),
     home: makeNodeComponent("home"),
     catalogo: makeNodeComponent("catalogo"),
     iconLink: makeNodeComponent("iconLink"),

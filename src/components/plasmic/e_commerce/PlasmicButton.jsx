@@ -293,12 +293,12 @@ function PlasmicButton__RenderFunc(props) {
           projectcss.__wab_text,
           sty.link
         )}
-        href={`/HO`}
+        href={`/Home`}
       >
         <React.Fragment>
           <span
             className={"plasmic_default__all plasmic_default__span"}
-            style={{ color: "#6AD63E" }}
+            style={{ color: "#FFFFFF" }}
           >
             {"Log-in"}
           </span>

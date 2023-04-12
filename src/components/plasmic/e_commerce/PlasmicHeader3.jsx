@@ -12,15 +12,12 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import MenuButton from "../../MenuButton"; // plasmic-import: Qab3DN1TM8pM2X/component
 import IconLink from "../../IconLink"; // plasmic-import: mdlB7opZfCK7nb/component
-import { useScreenVariants as useScreenVariantscf27W7HxUbhqT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -CF27w7hxUbhqT/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
@@ -53,9 +50,6 @@ function PlasmicHeader3__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscf27W7HxUbhqT()
-  });
   return true ? (
     <p.Stack
       as={"div"}
@@ -74,7 +68,7 @@ function PlasmicHeader3__RenderFunc(props) {
         sty.root
       )}
     >
-      {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+      {true ? (
         <MenuButton
           data-plasmic-name={"menuButton"}
           data-plasmic-override={overrides.menuButton}
@@ -99,7 +93,7 @@ function PlasmicHeader3__RenderFunc(props) {
           projectcss.__wab_text,
           sty.link__eHpOy
         )}
-        href={`/HO`}
+        href={`/Home`}
       >
         {"Home"}
       </a>
@@ -110,7 +104,6 @@ function PlasmicHeader3__RenderFunc(props) {
           projectcss.__wab_text,
           sty.link__ks9Wb
         )}
-        href={`/GestioneOrdini`}
       >
         {"Gestione Ordini"}
       </a>
@@ -123,18 +116,14 @@ function PlasmicHeader3__RenderFunc(props) {
         )}
         href={`/catalogo`}
       >
-        {hasVariant(globalVariants, "screen", "mobile") ? (
-          "Catalogo"
-        ) : (
-          <React.Fragment>
-            <span
-              className={"plasmic_default__all plasmic_default__span"}
-              style={{ color: "#FFFFFF" }}
-            >
-              {"Catalogo"}
-            </span>
-          </React.Fragment>
-        )}
+        <React.Fragment>
+          <span
+            className={"plasmic_default__all plasmic_default__span"}
+            style={{ color: "#FFFFFF" }}
+          >
+            {"Catalogo"}
+          </span>
+        </React.Fragment>
       </a>
       <p.Stack
         as={"div"}
