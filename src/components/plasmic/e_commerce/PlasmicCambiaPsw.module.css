@@ -9,6 +9,7 @@
   background: url("./images/plant1Featuredjpg.png") top 50% left 50% / cover repeat;
   min-width: 0;
   min-height: 0;
+  padding: 166px 208px 374px 280px;
 }
 .group33459 {
   width: 532px;
@@ -31,6 +32,7 @@
   padding-right: 79px;
   padding-left: 117px;
   margin-left: 0px;
+  margin-bottom: 0px;
   border-radius: 24px;
 }
 .svg {
@@ -44,6 +46,13 @@
   top: 27px;
   left: 27px;
   overflow: hidden;
+}
+.link {
+  position: absolute;
+  left: 41px;
+  top: 25px;
+  width: 78px;
+  margin-right: 0px;
 }
 .text {
   display: block;
@@ -101,6 +110,7 @@
   left: 63px;
   top: 183px;
   margin-bottom: 3px;
+  border-radius: 20px;
 }
 .password2 {
   position: absolute;
@@ -110,4 +120,5 @@
   left: 61px;
   top: 283px;
   margin-bottom: 3px;
+  border-radius: 20px;
 }

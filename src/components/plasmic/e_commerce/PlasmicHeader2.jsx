@@ -130,6 +130,24 @@ function PlasmicHeader2__RenderFunc(props) {
                 role={"img"}
               />
 
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__boOy
+                )}
+                href={`/Carrello`}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#C9C9C9" }}
+                  >
+                    {"."}
+                  </span>
+                </React.Fragment>
+              </a>
               <div
                 data-plasmic-name={"text"}
                 data-plasmic-override={overrides.text}

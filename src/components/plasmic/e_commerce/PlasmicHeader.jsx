@@ -82,132 +82,134 @@ function PlasmicHeader__RenderFunc(props) {
         { [sty.rootexpanded]: hasVariant($state, "expanded", "expanded") }
       )}
     >
-      <p.Stack
-        as={"div"}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__anjgA, {
-          [sty.freeBoxexpanded__anjgAkm7Ym]: hasVariant(
-            $state,
-            "expanded",
-            "expanded"
-          )
-        })}
-      >
-        {true ? (
-          <MenuButton
-            data-plasmic-name={"menuButton"}
-            data-plasmic-override={overrides.menuButton}
-            className={classNames("__wab_instance", sty.menuButton, {
-              [sty.menuButtonexpanded]: hasVariant(
-                $state,
-                "expanded",
-                "expanded"
-              )
-            })}
-          />
-        ) : null}
-        {true ? (
-          <a
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              sty.link__tsBJj
-            )}
-            href={`/profilo`}
-          >
-            <PersonCirclesvgIcon
-              data-plasmic-name={"svg"}
-              data-plasmic-override={overrides.svg}
-              className={classNames(projectcss.all, sty.svg)}
-              role={"img"}
-            />
-          </a>
-        ) : null}
+      {true ? (
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__l9Vk3, {
-            [sty.freeBoxexpanded__l9Vk3Km7Ym]: hasVariant(
+          className={classNames(projectcss.all, sty.freeBox__anjgA, {
+            [sty.freeBoxexpanded__anjgAkm7Ym]: hasVariant(
               $state,
               "expanded",
               "expanded"
             )
           })}
         >
-          <a
-            data-plasmic-name={"home"}
-            data-plasmic-override={overrides.home}
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.home
-            )}
-            href={`/Home`}
-          >
-            {"Home"}
-          </a>
-          <a
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link___4Mkvj
-            )}
-            href={`/gestione-ordini`}
-          >
-            {"Gestione Ordini"}
-          </a>
-          <a
-            data-plasmic-name={"catalogo"}
-            data-plasmic-override={overrides.catalogo}
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.catalogo,
-              {
-                [sty.catalogoexpanded]: hasVariant(
+          {true ? (
+            <MenuButton
+              data-plasmic-name={"menuButton"}
+              data-plasmic-override={overrides.menuButton}
+              className={classNames("__wab_instance", sty.menuButton, {
+                [sty.menuButtonexpanded]: hasVariant(
                   $state,
                   "expanded",
                   "expanded"
                 )
-              }
-            )}
-            href={"/catalogo"}
-            target={undefined}
-          >
-            {"Catalogo"}
-          </a>
-        </p.Stack>
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__lOvlk)}
-        >
-          {true ? (
-            <IconLink
-              data-plasmic-name={"iconLink"}
-              data-plasmic-override={overrides.iconLink}
-              className={classNames("__wab_instance", sty.iconLink)}
-              href={`/Carrello`}
-              icon={
-                <div
-                  data-plasmic-name={"text"}
-                  data-plasmic-override={overrides.text}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text
-                  )}
-                >
-                  {"0"}
-                </div>
-              }
+              })}
             />
           ) : null}
+          {true ? (
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__tsBJj
+              )}
+              href={`/profilo`}
+            >
+              <PersonCirclesvgIcon
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
+                role={"img"}
+              />
+            </a>
+          ) : null}
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__l9Vk3, {
+              [sty.freeBoxexpanded__l9Vk3Km7Ym]: hasVariant(
+                $state,
+                "expanded",
+                "expanded"
+              )
+            })}
+          >
+            <a
+              data-plasmic-name={"home"}
+              data-plasmic-override={overrides.home}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.home
+              )}
+              href={`/Home`}
+            >
+              {"Home"}
+            </a>
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link___4Mkvj
+              )}
+              href={`/gestione-ordini`}
+            >
+              {"Gestione Ordini"}
+            </a>
+            <a
+              data-plasmic-name={"catalogo"}
+              data-plasmic-override={overrides.catalogo}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.catalogo,
+                {
+                  [sty.catalogoexpanded]: hasVariant(
+                    $state,
+                    "expanded",
+                    "expanded"
+                  )
+                }
+              )}
+              href={"/catalogo"}
+              target={undefined}
+            >
+              {"Catalogo"}
+            </a>
+          </p.Stack>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__lOvlk)}
+          >
+            {true ? (
+              <IconLink
+                data-plasmic-name={"iconLink"}
+                data-plasmic-override={overrides.iconLink}
+                className={classNames("__wab_instance", sty.iconLink)}
+                href={`/Carrello`}
+                icon={
+                  <div
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text
+                    )}
+                  >
+                    {"0"}
+                  </div>
+                }
+              />
+            ) : null}
+          </p.Stack>
         </p.Stack>
-      </p.Stack>
+      ) : null}
       {true ? (
         <div
           className={classNames(projectcss.all, sty.freeBox__mAhyx, {

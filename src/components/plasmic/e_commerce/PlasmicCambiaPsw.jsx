@@ -103,6 +103,26 @@ function PlasmicCambiaPsw__RenderFunc(props) {
                 role={"img"}
               />
 
+              <a
+                data-plasmic-name={"link"}
+                data-plasmic-override={overrides.link}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link
+                )}
+                href={`/login`}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#BAB8B8" }}
+                  >
+                    {"."}
+                  </span>
+                </React.Fragment>
+              </a>
               <div
                 data-plasmic-name={"text"}
                 data-plasmic-override={overrides.text}
@@ -216,6 +236,7 @@ const PlasmicDescendants = {
     "group33459",
     "card",
     "svg",
+    "link",
     "text",
     "signIn",
     "label",
@@ -228,6 +249,7 @@ const PlasmicDescendants = {
     "group33459",
     "card",
     "svg",
+    "link",
     "text",
     "signIn",
     "label",
@@ -239,6 +261,7 @@ const PlasmicDescendants = {
   card: [
     "card",
     "svg",
+    "link",
     "text",
     "signIn",
     "label",
@@ -248,6 +271,7 @@ const PlasmicDescendants = {
   ],
 
   svg: ["svg"],
+  link: ["link"],
   text: ["text"],
   signIn: ["signIn", "label"],
   label: ["label"],
@@ -307,6 +331,7 @@ export const PlasmicCambiaPsw = Object.assign(
     group33459: makeNodeComponent("group33459"),
     card: makeNodeComponent("card"),
     svg: makeNodeComponent("svg"),
+    link: makeNodeComponent("link"),
     text: makeNodeComponent("text"),
     signIn: makeNodeComponent("signIn"),
     label: makeNodeComponent("label"),

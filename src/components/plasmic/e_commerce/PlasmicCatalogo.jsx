@@ -645,6 +645,7 @@ function PlasmicCatalogo__RenderFunc(props) {
                               projectcss.__wab_text,
                               sty.link__ndTWl
                             )}
+                            href={`/catalogo`}
                           >
                             {"Visualizza tutto"}
                           </a>
@@ -655,6 +656,7 @@ function PlasmicCatalogo__RenderFunc(props) {
                               projectcss.__wab_text,
                               sty.link__iGoGv
                             )}
+                            href={`/productBibita`}
                           >
                             {"Bevande"}
                           </a>
@@ -665,6 +667,7 @@ function PlasmicCatalogo__RenderFunc(props) {
                               projectcss.__wab_text,
                               sty.link__tFUjB
                             )}
+                            href={`/productFormaggio`}
                           >
                             {"formaggi"}
                           </a>
@@ -675,6 +678,7 @@ function PlasmicCatalogo__RenderFunc(props) {
                               projectcss.__wab_text,
                               sty.link__koQj4
                             )}
+                            href={`/productPianta`}
                           >
                             {"piante"}
                           </a>

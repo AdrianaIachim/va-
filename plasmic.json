@@ -38,7 +38,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -1540,7 +1541,8 @@
           "name": "LottieWrapper",
           "componentImportPath": "@plasmicpkgs/lottie-react"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "gLnoj82AzKVVT7qXiqAbHD",
@@ -1600,7 +1602,8 @@
           "name": "TabContent",
           "componentImportPath": "@plasmicpkgs/plasmic-tabs"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -1619,7 +1622,8 @@
           "name": "EmbedCss",
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

@@ -114,6 +114,9 @@
   width: 30px;
   height: 30px;
 }
+.link__boOy {
+  position: relative;
+}
 .text {
   position: relative;
   width: auto;

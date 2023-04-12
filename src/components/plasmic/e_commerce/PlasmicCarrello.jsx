@@ -22,6 +22,15 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
 import sty from "./PlasmicCarrello.module.css"; // plasmic-import: piyTwP7vuAu/css
+import IconDirectionsChevronLeft2Icon from "./icons/PlasmicIcon__IconDirectionsChevronLeft2"; // plasmic-import: W5GSdrYJWox/icon
+import IconDirectionsChevronRightIcon from "./icons/PlasmicIcon__IconDirectionsChevronRight"; // plasmic-import: pO9adPw4RHW/icon
+import img15NckoroRTw5 from "./images/img15.svg"; // plasmic-import: nckoroRTw5/picture
+import ellipse75OmZblC2Ict from "./images/ellipse75.svg"; // plasmic-import: OMZblC2ICT/picture
+import img16SyHv5FAb9F from "./images/img16.svg"; // plasmic-import: SyHv5fAb9f/picture
+import img17LfUzecrdpD from "./images/img17.svg"; // plasmic-import: LfUzecrdpD/picture
+import img18VN3FsCHSz from "./images/img18.svg"; // plasmic-import: vN3fsC_HSz/picture
+import img19GsS8OIaq0L from "./images/img19.svg"; // plasmic-import: GsS8oIaq0l/picture
+import img20Jdk8JCfOXb from "./images/img20.svg"; // plasmic-import: jdk8jCfOXb/picture
 
 export const PlasmicCarrello__VariantProps = new Array();
 
@@ -72,6 +81,989 @@ function PlasmicCarrello__RenderFunc(props) {
             className={classNames("__wab_instance", sty.header2)}
           />
 
+          <div
+            data-plasmic-name={"dashboardAdmin"}
+            data-plasmic-override={overrides.dashboardAdmin}
+            className={classNames(projectcss.all, sty.dashboardAdmin)}
+          >
+            <div
+              data-plasmic-name={"bgDesign"}
+              data-plasmic-override={overrides.bgDesign}
+              className={classNames(projectcss.all, sty.bgDesign)}
+            >
+              <div
+                data-plasmic-name={"rectangle10"}
+                data-plasmic-override={overrides.rectangle10}
+                className={classNames(projectcss.all, sty.rectangle10)}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___9Vrb
+                )}
+              >
+                {"ID Ordine"}
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"contentContacts01List"}
+              data-plasmic-override={overrides.contentContacts01List}
+              className={classNames(projectcss.all, sty.contentContacts01List)}
+            >
+              <div
+                data-plasmic-name={"fillsShadowRound"}
+                data-plasmic-override={overrides.fillsShadowRound}
+                className={classNames(projectcss.all, sty.fillsShadowRound)}
+              >
+                <div
+                  data-plasmic-name={"bg"}
+                  data-plasmic-override={overrides.bg}
+                  className={classNames(projectcss.all, sty.bg)}
+                >
+                  <div
+                    data-plasmic-name={"name"}
+                    data-plasmic-override={overrides.name}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.name
+                    )}
+                  >
+                    {"11.00"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___6MeVk
+                    )}
+                  >
+                    {"12"}
+                  </div>
+                </div>
+              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__ul8F2)}
+                displayHeight={"32px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"32px"}
+                loading={"lazy"}
+                src={{
+                  src: img15NckoroRTw5,
+                  fullWidth: 32,
+                  fullHeight: 32,
+                  aspectRatio: 1
+                }}
+              />
+
+              {false ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__k9VV)}
+                  displayHeight={"9px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"9px"}
+                  loading={"lazy"}
+                  src={{
+                    src: ellipse75OmZblC2Ict,
+                    fullWidth: 9,
+                    fullHeight: 9,
+                    aspectRatio: 1
+                  }}
+                />
+              ) : null}
+              <div
+                data-plasmic-name={"name2"}
+                data-plasmic-override={overrides.name2}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.name2
+                )}
+              >
+                {"Darlene Robertson"}
+              </div>
+              <div
+                data-plasmic-name={"jobTitle"}
+                data-plasmic-override={overrides.jobTitle}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.jobTitle
+                )}
+              >
+                {"19/09/2022"}
+              </div>
+              <div
+                data-plasmic-name={"email"}
+                data-plasmic-override={overrides.email}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.email
+                )}
+              >
+                {"Consegnato"}
+              </div>
+              <div
+                data-plasmic-name={"phone"}
+                data-plasmic-override={overrides.phone}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.phone
+                )}
+              >
+                {"190"}
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"contentContacts01List2"}
+              data-plasmic-override={overrides.contentContacts01List2}
+              className={classNames(projectcss.all, sty.contentContacts01List2)}
+            >
+              <div
+                data-plasmic-name={"fillsShadowRound2"}
+                data-plasmic-override={overrides.fillsShadowRound2}
+                className={classNames(projectcss.all, sty.fillsShadowRound2)}
+              >
+                <div
+                  data-plasmic-name={"bg2"}
+                  data-plasmic-override={overrides.bg2}
+                  className={classNames(projectcss.all, sty.bg2)}
+                >
+                  <div
+                    data-plasmic-name={"name3"}
+                    data-plasmic-override={overrides.name3}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.name3
+                    )}
+                  >
+                    {"11.00"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___9PfVw
+                    )}
+                  >
+                    {"190"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__vLlPj
+                    )}
+                  >
+                    {"1"}
+                  </div>
+                </div>
+              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__mEoJ)}
+                displayHeight={"32px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"32px"}
+                loading={"lazy"}
+                src={{
+                  src: img16SyHv5FAb9F,
+                  fullWidth: 32,
+                  fullHeight: 32,
+                  aspectRatio: 1
+                }}
+              />
+
+              {false ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__c5Tc3)}
+                  displayHeight={"9px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"9px"}
+                  loading={"lazy"}
+                  src={{
+                    src: ellipse75OmZblC2Ict,
+                    fullWidth: 9,
+                    fullHeight: 9,
+                    aspectRatio: 1
+                  }}
+                />
+              ) : null}
+              <div
+                data-plasmic-name={"name4"}
+                data-plasmic-override={overrides.name4}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.name4
+                )}
+              >
+                {"Jerome Bell"}
+              </div>
+              <div
+                data-plasmic-name={"jobTitle2"}
+                data-plasmic-override={overrides.jobTitle2}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.jobTitle2
+                )}
+              >
+                {"19/09/2022"}
+              </div>
+              <div
+                data-plasmic-name={"email2"}
+                data-plasmic-override={overrides.email2}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.email2
+                )}
+              >
+                {"Consegnato"}
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"contentContacts01List3"}
+              data-plasmic-override={overrides.contentContacts01List3}
+              className={classNames(projectcss.all, sty.contentContacts01List3)}
+            >
+              <div
+                data-plasmic-name={"fillsShadowRound3"}
+                data-plasmic-override={overrides.fillsShadowRound3}
+                className={classNames(projectcss.all, sty.fillsShadowRound3)}
+              >
+                <div
+                  data-plasmic-name={"bg3"}
+                  data-plasmic-override={overrides.bg3}
+                  className={classNames(projectcss.all, sty.bg3)}
+                >
+                  <div
+                    data-plasmic-name={"name5"}
+                    data-plasmic-override={overrides.name5}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.name5
+                    )}
+                  >
+                    {"11.00"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__hnbCc
+                    )}
+                  >
+                    {"190"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__rUb2R
+                    )}
+                  >
+                    {"1"}
+                  </div>
+                </div>
+              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img___4I7YY)}
+                displayHeight={"32px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"32px"}
+                loading={"lazy"}
+                src={{
+                  src: img17LfUzecrdpD,
+                  fullWidth: 32,
+                  fullHeight: 32,
+                  aspectRatio: 1
+                }}
+              />
+
+              {false ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__fJnKg)}
+                  displayHeight={"9px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"9px"}
+                  loading={"lazy"}
+                  src={{
+                    src: ellipse75OmZblC2Ict,
+                    fullWidth: 9,
+                    fullHeight: 9,
+                    aspectRatio: 1
+                  }}
+                />
+              ) : null}
+              <div
+                data-plasmic-name={"name6"}
+                data-plasmic-override={overrides.name6}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.name6
+                )}
+              >
+                {"Cameron Williamson"}
+              </div>
+              <div
+                data-plasmic-name={"jobTitle3"}
+                data-plasmic-override={overrides.jobTitle3}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.jobTitle3
+                )}
+              >
+                {"19/09/2022"}
+              </div>
+              <div
+                data-plasmic-name={"email3"}
+                data-plasmic-override={overrides.email3}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.email3
+                )}
+              >
+                {"Consegnato"}
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"contentContacts01List4"}
+              data-plasmic-override={overrides.contentContacts01List4}
+              className={classNames(projectcss.all, sty.contentContacts01List4)}
+            >
+              <div
+                data-plasmic-name={"fillsShadowRound4"}
+                data-plasmic-override={overrides.fillsShadowRound4}
+                className={classNames(projectcss.all, sty.fillsShadowRound4)}
+              >
+                <div
+                  data-plasmic-name={"bg4"}
+                  data-plasmic-override={overrides.bg4}
+                  className={classNames(projectcss.all, sty.bg4)}
+                >
+                  <div
+                    data-plasmic-name={"name7"}
+                    data-plasmic-override={overrides.name7}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.name7
+                    )}
+                  >
+                    {"11.00"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__psZnu
+                    )}
+                  >
+                    {"190"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___05Uf2
+                    )}
+                  >
+                    {"3"}
+                  </div>
+                </div>
+              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__vQsy7)}
+                displayHeight={"32px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"32px"}
+                loading={"lazy"}
+                src={{
+                  src: img18VN3FsCHSz,
+                  fullWidth: 32,
+                  fullHeight: 32,
+                  aspectRatio: 1
+                }}
+              />
+
+              {false ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___4RCrz)}
+                  displayHeight={"9px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"9px"}
+                  loading={"lazy"}
+                  src={{
+                    src: ellipse75OmZblC2Ict,
+                    fullWidth: 9,
+                    fullHeight: 9,
+                    aspectRatio: 1
+                  }}
+                />
+              ) : null}
+              <div
+                data-plasmic-name={"name8"}
+                data-plasmic-override={overrides.name8}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.name8
+                )}
+              >
+                {"Jenny Wilson"}
+              </div>
+              <div
+                data-plasmic-name={"jobTitle4"}
+                data-plasmic-override={overrides.jobTitle4}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.jobTitle4
+                )}
+              >
+                {"19/09/2022"}
+              </div>
+              <div
+                data-plasmic-name={"email4"}
+                data-plasmic-override={overrides.email4}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.email4
+                )}
+              >
+                {"Annullato"}
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"contentContacts01List5"}
+              data-plasmic-override={overrides.contentContacts01List5}
+              className={classNames(projectcss.all, sty.contentContacts01List5)}
+            >
+              <div
+                data-plasmic-name={"fillsShadowRound5"}
+                data-plasmic-override={overrides.fillsShadowRound5}
+                className={classNames(projectcss.all, sty.fillsShadowRound5)}
+              >
+                <div
+                  data-plasmic-name={"bg5"}
+                  data-plasmic-override={overrides.bg5}
+                  className={classNames(projectcss.all, sty.bg5)}
+                >
+                  <div
+                    data-plasmic-name={"name9"}
+                    data-plasmic-override={overrides.name9}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.name9
+                    )}
+                  >
+                    {"11.00"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__d9K5F
+                    )}
+                  >
+                    {"190"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pgIN
+                    )}
+                  >
+                    {(() => {
+                      try {
+                        return undefined;
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return "1";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__igiv
+                    )}
+                  >
+                    {"5"}
+                  </div>
+                </div>
+              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__baC2J)}
+                displayHeight={"32px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"32px"}
+                loading={"lazy"}
+                src={{
+                  src: img19GsS8OIaq0L,
+                  fullWidth: 32,
+                  fullHeight: 32,
+                  aspectRatio: 1
+                }}
+              />
+
+              {false ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__tkOOo)}
+                  displayHeight={"9px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"9px"}
+                  loading={"lazy"}
+                  src={{
+                    src: ellipse75OmZblC2Ict,
+                    fullWidth: 9,
+                    fullHeight: 9,
+                    aspectRatio: 1
+                  }}
+                />
+              ) : null}
+              <div
+                data-plasmic-name={"name10"}
+                data-plasmic-override={overrides.name10}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.name10
+                )}
+              >
+                {"Arlene McCoy"}
+              </div>
+              <div
+                data-plasmic-name={"jobTitle5"}
+                data-plasmic-override={overrides.jobTitle5}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.jobTitle5
+                )}
+              >
+                {"19/09/2022"}
+              </div>
+              <div
+                data-plasmic-name={"email5"}
+                data-plasmic-override={overrides.email5}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.email5
+                )}
+              >
+                {"In Transito"}
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"contentContacts01List6"}
+              data-plasmic-override={overrides.contentContacts01List6}
+              className={classNames(projectcss.all, sty.contentContacts01List6)}
+            >
+              <div
+                data-plasmic-name={"fillsShadowRound6"}
+                data-plasmic-override={overrides.fillsShadowRound6}
+                className={classNames(projectcss.all, sty.fillsShadowRound6)}
+              >
+                <div
+                  data-plasmic-name={"bg6"}
+                  data-plasmic-override={overrides.bg6}
+                  className={classNames(projectcss.all, sty.bg6)}
+                >
+                  <div
+                    data-plasmic-name={"name11"}
+                    data-plasmic-override={overrides.name11}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.name11
+                    )}
+                  >
+                    {"11.00"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___7PqCm
+                    )}
+                  >
+                    {"190"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__frpP
+                    )}
+                  >
+                    {"7"}
+                  </div>
+                </div>
+              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__ojxJg)}
+                displayHeight={"32px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"32px"}
+                loading={"lazy"}
+                src={{
+                  src: img20Jdk8JCfOXb,
+                  fullWidth: 32,
+                  fullHeight: 32,
+                  aspectRatio: 1
+                }}
+              />
+
+              {false ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__iaNy)}
+                  displayHeight={"9px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"9px"}
+                  loading={"lazy"}
+                  src={{
+                    src: ellipse75OmZblC2Ict,
+                    fullWidth: 9,
+                    fullHeight: 9,
+                    aspectRatio: 1
+                  }}
+                />
+              ) : null}
+              <div
+                data-plasmic-name={"name12"}
+                data-plasmic-override={overrides.name12}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.name12
+                )}
+              >
+                {"Cody Fisher"}
+              </div>
+              <div
+                data-plasmic-name={"jobTitle6"}
+                data-plasmic-override={overrides.jobTitle6}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.jobTitle6
+                )}
+              >
+                {"19/09/2022"}
+              </div>
+              <div
+                data-plasmic-name={"email6"}
+                data-plasmic-override={overrides.email6}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.email6
+                )}
+              >
+                {"Annullato"}
+              </div>
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___8KC02
+              )}
+            >
+              {"Stato"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__hkIvr
+              )}
+            >
+              {"User Name"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___4O4
+              )}
+            >
+              {"Prezzo"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__oQobJ
+              )}
+            >
+              {"Orario"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___8SCdE
+              )}
+            >
+              {"Data"}
+            </div>
+            <div
+              data-plasmic-name={"pagination"}
+              data-plasmic-override={overrides.pagination}
+              className={classNames(projectcss.all, sty.pagination)}
+            >
+              <div
+                data-plasmic-name={"pageActive"}
+                data-plasmic-override={overrides.pageActive}
+                className={classNames(projectcss.all, sty.pageActive)}
+              >
+                <div
+                  data-plasmic-name={"rectangle13"}
+                  data-plasmic-override={overrides.rectangle13}
+                  className={classNames(projectcss.all, sty.rectangle13)}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__rqHaw
+                  )}
+                >
+                  {"2"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"pageinactive"}
+                data-plasmic-override={overrides.pageinactive}
+                className={classNames(projectcss.all, sty.pageinactive)}
+              >
+                <div
+                  data-plasmic-name={"rectangle14"}
+                  data-plasmic-override={overrides.rectangle14}
+                  className={classNames(projectcss.all, sty.rectangle14)}
+                />
+
+                <div
+                  data-plasmic-name={"_2"}
+                  data-plasmic-override={overrides._2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty._2
+                  )}
+                >
+                  {"1"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"pageinactive2"}
+                data-plasmic-override={overrides.pageinactive2}
+                className={classNames(projectcss.all, sty.pageinactive2)}
+              >
+                <div
+                  data-plasmic-name={"rectangle15"}
+                  data-plasmic-override={overrides.rectangle15}
+                  className={classNames(projectcss.all, sty.rectangle15)}
+                />
+
+                <div
+                  data-plasmic-name={"_3"}
+                  data-plasmic-override={overrides._3}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty._3
+                  )}
+                >
+                  {"3"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"pageinactive3"}
+                data-plasmic-override={overrides.pageinactive3}
+                className={classNames(projectcss.all, sty.pageinactive3)}
+              >
+                <div
+                  data-plasmic-name={"rectangle16"}
+                  data-plasmic-override={overrides.rectangle16}
+                  className={classNames(projectcss.all, sty.rectangle16)}
+                />
+
+                <div
+                  data-plasmic-name={"_4"}
+                  data-plasmic-override={overrides._4}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty._4
+                  )}
+                >
+                  {"4"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"pageinactive4"}
+                data-plasmic-override={overrides.pageinactive4}
+                className={classNames(projectcss.all, sty.pageinactive4)}
+              >
+                <div
+                  data-plasmic-name={"rectangle17"}
+                  data-plasmic-override={overrides.rectangle17}
+                  className={classNames(projectcss.all, sty.rectangle17)}
+                />
+
+                <div
+                  data-plasmic-name={"_5"}
+                  data-plasmic-override={overrides._5}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty._5
+                  )}
+                >
+                  {"5"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"prev"}
+                data-plasmic-override={overrides.prev}
+                className={classNames(projectcss.all, sty.prev)}
+              >
+                <div
+                  data-plasmic-name={"title"}
+                  data-plasmic-override={overrides.title}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.title
+                  )}
+                >
+                  {"Prev"}
+                </div>
+                <IconDirectionsChevronLeft2Icon
+                  className={classNames(projectcss.all, sty.svg__un4)}
+                  role={"img"}
+                />
+              </div>
+              <div
+                data-plasmic-name={"prev2"}
+                data-plasmic-override={overrides.prev2}
+                className={classNames(projectcss.all, sty.prev2)}
+              >
+                <div
+                  data-plasmic-name={"title2"}
+                  data-plasmic-override={overrides.title2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.title2
+                  )}
+                >
+                  {"Next"}
+                </div>
+                <IconDirectionsChevronRightIcon
+                  className={classNames(projectcss.all, sty.svg__fUaMu)}
+                  role={"img"}
+                />
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"wireframeNaming"}
+              data-plasmic-override={overrides.wireframeNaming}
+              className={classNames(projectcss.all, sty.wireframeNaming)}
+            >
+              <div
+                data-plasmic-name={"title3"}
+                data-plasmic-override={overrides.title3}
+                className={classNames(projectcss.all, sty.title3)}
+              >
+                <div
+                  data-plasmic-name={"prePayMyAccount"}
+                  data-plasmic-override={overrides.prePayMyAccount}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.prePayMyAccount
+                  )}
+                >
+                  {"Dashboard - Admin | 02"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"bar"}
+                data-plasmic-override={overrides.bar}
+                className={classNames(projectcss.all, sty.bar)}
+              />
+            </div>
+          </div>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -84,8 +1076,298 @@ function PlasmicCarrello__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header2", "footer"],
+  root: [
+    "root",
+    "header2",
+    "dashboardAdmin",
+    "bgDesign",
+    "rectangle10",
+    "contentContacts01List",
+    "fillsShadowRound",
+    "bg",
+    "name",
+    "name2",
+    "jobTitle",
+    "email",
+    "phone",
+    "contentContacts01List2",
+    "fillsShadowRound2",
+    "bg2",
+    "name3",
+    "name4",
+    "jobTitle2",
+    "email2",
+    "contentContacts01List3",
+    "fillsShadowRound3",
+    "bg3",
+    "name5",
+    "name6",
+    "jobTitle3",
+    "email3",
+    "contentContacts01List4",
+    "fillsShadowRound4",
+    "bg4",
+    "name7",
+    "name8",
+    "jobTitle4",
+    "email4",
+    "contentContacts01List5",
+    "fillsShadowRound5",
+    "bg5",
+    "name9",
+    "name10",
+    "jobTitle5",
+    "email5",
+    "contentContacts01List6",
+    "fillsShadowRound6",
+    "bg6",
+    "name11",
+    "name12",
+    "jobTitle6",
+    "email6",
+    "pagination",
+    "pageActive",
+    "rectangle13",
+    "pageinactive",
+    "rectangle14",
+    "_2",
+    "pageinactive2",
+    "rectangle15",
+    "_3",
+    "pageinactive3",
+    "rectangle16",
+    "_4",
+    "pageinactive4",
+    "rectangle17",
+    "_5",
+    "prev",
+    "title",
+    "prev2",
+    "title2",
+    "wireframeNaming",
+    "title3",
+    "prePayMyAccount",
+    "bar",
+    "footer"
+  ],
+
   header2: ["header2"],
+  dashboardAdmin: [
+    "dashboardAdmin",
+    "bgDesign",
+    "rectangle10",
+    "contentContacts01List",
+    "fillsShadowRound",
+    "bg",
+    "name",
+    "name2",
+    "jobTitle",
+    "email",
+    "phone",
+    "contentContacts01List2",
+    "fillsShadowRound2",
+    "bg2",
+    "name3",
+    "name4",
+    "jobTitle2",
+    "email2",
+    "contentContacts01List3",
+    "fillsShadowRound3",
+    "bg3",
+    "name5",
+    "name6",
+    "jobTitle3",
+    "email3",
+    "contentContacts01List4",
+    "fillsShadowRound4",
+    "bg4",
+    "name7",
+    "name8",
+    "jobTitle4",
+    "email4",
+    "contentContacts01List5",
+    "fillsShadowRound5",
+    "bg5",
+    "name9",
+    "name10",
+    "jobTitle5",
+    "email5",
+    "contentContacts01List6",
+    "fillsShadowRound6",
+    "bg6",
+    "name11",
+    "name12",
+    "jobTitle6",
+    "email6",
+    "pagination",
+    "pageActive",
+    "rectangle13",
+    "pageinactive",
+    "rectangle14",
+    "_2",
+    "pageinactive2",
+    "rectangle15",
+    "_3",
+    "pageinactive3",
+    "rectangle16",
+    "_4",
+    "pageinactive4",
+    "rectangle17",
+    "_5",
+    "prev",
+    "title",
+    "prev2",
+    "title2",
+    "wireframeNaming",
+    "title3",
+    "prePayMyAccount",
+    "bar"
+  ],
+
+  bgDesign: ["bgDesign", "rectangle10"],
+  rectangle10: ["rectangle10"],
+  contentContacts01List: [
+    "contentContacts01List",
+    "fillsShadowRound",
+    "bg",
+    "name",
+    "name2",
+    "jobTitle",
+    "email",
+    "phone"
+  ],
+
+  fillsShadowRound: ["fillsShadowRound", "bg", "name"],
+  bg: ["bg", "name"],
+  name: ["name"],
+  name2: ["name2"],
+  jobTitle: ["jobTitle"],
+  email: ["email"],
+  phone: ["phone"],
+  contentContacts01List2: [
+    "contentContacts01List2",
+    "fillsShadowRound2",
+    "bg2",
+    "name3",
+    "name4",
+    "jobTitle2",
+    "email2"
+  ],
+
+  fillsShadowRound2: ["fillsShadowRound2", "bg2", "name3"],
+  bg2: ["bg2", "name3"],
+  name3: ["name3"],
+  name4: ["name4"],
+  jobTitle2: ["jobTitle2"],
+  email2: ["email2"],
+  contentContacts01List3: [
+    "contentContacts01List3",
+    "fillsShadowRound3",
+    "bg3",
+    "name5",
+    "name6",
+    "jobTitle3",
+    "email3"
+  ],
+
+  fillsShadowRound3: ["fillsShadowRound3", "bg3", "name5"],
+  bg3: ["bg3", "name5"],
+  name5: ["name5"],
+  name6: ["name6"],
+  jobTitle3: ["jobTitle3"],
+  email3: ["email3"],
+  contentContacts01List4: [
+    "contentContacts01List4",
+    "fillsShadowRound4",
+    "bg4",
+    "name7",
+    "name8",
+    "jobTitle4",
+    "email4"
+  ],
+
+  fillsShadowRound4: ["fillsShadowRound4", "bg4", "name7"],
+  bg4: ["bg4", "name7"],
+  name7: ["name7"],
+  name8: ["name8"],
+  jobTitle4: ["jobTitle4"],
+  email4: ["email4"],
+  contentContacts01List5: [
+    "contentContacts01List5",
+    "fillsShadowRound5",
+    "bg5",
+    "name9",
+    "name10",
+    "jobTitle5",
+    "email5"
+  ],
+
+  fillsShadowRound5: ["fillsShadowRound5", "bg5", "name9"],
+  bg5: ["bg5", "name9"],
+  name9: ["name9"],
+  name10: ["name10"],
+  jobTitle5: ["jobTitle5"],
+  email5: ["email5"],
+  contentContacts01List6: [
+    "contentContacts01List6",
+    "fillsShadowRound6",
+    "bg6",
+    "name11",
+    "name12",
+    "jobTitle6",
+    "email6"
+  ],
+
+  fillsShadowRound6: ["fillsShadowRound6", "bg6", "name11"],
+  bg6: ["bg6", "name11"],
+  name11: ["name11"],
+  name12: ["name12"],
+  jobTitle6: ["jobTitle6"],
+  email6: ["email6"],
+  pagination: [
+    "pagination",
+    "pageActive",
+    "rectangle13",
+    "pageinactive",
+    "rectangle14",
+    "_2",
+    "pageinactive2",
+    "rectangle15",
+    "_3",
+    "pageinactive3",
+    "rectangle16",
+    "_4",
+    "pageinactive4",
+    "rectangle17",
+    "_5",
+    "prev",
+    "title",
+    "prev2",
+    "title2"
+  ],
+
+  pageActive: ["pageActive", "rectangle13"],
+  rectangle13: ["rectangle13"],
+  pageinactive: ["pageinactive", "rectangle14", "_2"],
+  rectangle14: ["rectangle14"],
+  _2: ["_2"],
+  pageinactive2: ["pageinactive2", "rectangle15", "_3"],
+  rectangle15: ["rectangle15"],
+  _3: ["_3"],
+  pageinactive3: ["pageinactive3", "rectangle16", "_4"],
+  rectangle16: ["rectangle16"],
+  _4: ["_4"],
+  pageinactive4: ["pageinactive4", "rectangle17", "_5"],
+  rectangle17: ["rectangle17"],
+  _5: ["_5"],
+  prev: ["prev", "title"],
+  title: ["title"],
+  prev2: ["prev2", "title2"],
+  title2: ["title2"],
+  wireframeNaming: ["wireframeNaming", "title3", "prePayMyAccount", "bar"],
+  title3: ["title3", "prePayMyAccount"],
+  prePayMyAccount: ["prePayMyAccount"],
+  bar: ["bar"],
   footer: ["footer"]
 };
 
@@ -138,6 +1420,75 @@ export const PlasmicCarrello = Object.assign(
   {
     // Helper components rendering sub-elements
     header2: makeNodeComponent("header2"),
+    dashboardAdmin: makeNodeComponent("dashboardAdmin"),
+    bgDesign: makeNodeComponent("bgDesign"),
+    rectangle10: makeNodeComponent("rectangle10"),
+    contentContacts01List: makeNodeComponent("contentContacts01List"),
+    fillsShadowRound: makeNodeComponent("fillsShadowRound"),
+    bg: makeNodeComponent("bg"),
+    _name: makeNodeComponent("name"),
+    name2: makeNodeComponent("name2"),
+    jobTitle: makeNodeComponent("jobTitle"),
+    email: makeNodeComponent("email"),
+    phone: makeNodeComponent("phone"),
+    contentContacts01List2: makeNodeComponent("contentContacts01List2"),
+    fillsShadowRound2: makeNodeComponent("fillsShadowRound2"),
+    bg2: makeNodeComponent("bg2"),
+    name3: makeNodeComponent("name3"),
+    name4: makeNodeComponent("name4"),
+    jobTitle2: makeNodeComponent("jobTitle2"),
+    email2: makeNodeComponent("email2"),
+    contentContacts01List3: makeNodeComponent("contentContacts01List3"),
+    fillsShadowRound3: makeNodeComponent("fillsShadowRound3"),
+    bg3: makeNodeComponent("bg3"),
+    name5: makeNodeComponent("name5"),
+    name6: makeNodeComponent("name6"),
+    jobTitle3: makeNodeComponent("jobTitle3"),
+    email3: makeNodeComponent("email3"),
+    contentContacts01List4: makeNodeComponent("contentContacts01List4"),
+    fillsShadowRound4: makeNodeComponent("fillsShadowRound4"),
+    bg4: makeNodeComponent("bg4"),
+    name7: makeNodeComponent("name7"),
+    name8: makeNodeComponent("name8"),
+    jobTitle4: makeNodeComponent("jobTitle4"),
+    email4: makeNodeComponent("email4"),
+    contentContacts01List5: makeNodeComponent("contentContacts01List5"),
+    fillsShadowRound5: makeNodeComponent("fillsShadowRound5"),
+    bg5: makeNodeComponent("bg5"),
+    name9: makeNodeComponent("name9"),
+    name10: makeNodeComponent("name10"),
+    jobTitle5: makeNodeComponent("jobTitle5"),
+    email5: makeNodeComponent("email5"),
+    contentContacts01List6: makeNodeComponent("contentContacts01List6"),
+    fillsShadowRound6: makeNodeComponent("fillsShadowRound6"),
+    bg6: makeNodeComponent("bg6"),
+    name11: makeNodeComponent("name11"),
+    name12: makeNodeComponent("name12"),
+    jobTitle6: makeNodeComponent("jobTitle6"),
+    email6: makeNodeComponent("email6"),
+    pagination: makeNodeComponent("pagination"),
+    pageActive: makeNodeComponent("pageActive"),
+    rectangle13: makeNodeComponent("rectangle13"),
+    pageinactive: makeNodeComponent("pageinactive"),
+    rectangle14: makeNodeComponent("rectangle14"),
+    _2: makeNodeComponent("_2"),
+    pageinactive2: makeNodeComponent("pageinactive2"),
+    rectangle15: makeNodeComponent("rectangle15"),
+    _3: makeNodeComponent("_3"),
+    pageinactive3: makeNodeComponent("pageinactive3"),
+    rectangle16: makeNodeComponent("rectangle16"),
+    _4: makeNodeComponent("_4"),
+    pageinactive4: makeNodeComponent("pageinactive4"),
+    rectangle17: makeNodeComponent("rectangle17"),
+    _5: makeNodeComponent("_5"),
+    prev: makeNodeComponent("prev"),
+    title: makeNodeComponent("title"),
+    prev2: makeNodeComponent("prev2"),
+    title2: makeNodeComponent("title2"),
+    wireframeNaming: makeNodeComponent("wireframeNaming"),
+    title3: makeNodeComponent("title3"),
+    prePayMyAccount: makeNodeComponent("prePayMyAccount"),
+    bar: makeNodeComponent("bar"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicCarrello
     internalVariantProps: PlasmicCarrello__VariantProps,

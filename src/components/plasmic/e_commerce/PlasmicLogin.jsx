@@ -136,6 +136,18 @@ function PlasmicLogin__RenderFunc(props) {
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ``
+      },
+      {
+        path: "textbox2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
+      },
+      {
+        path: "password.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
       }
     ],
 
@@ -192,156 +204,141 @@ function PlasmicLogin__RenderFunc(props) {
             </p.Stack>
             <p.Stack
               as={"div"}
+              data-plasmic-name={"foreground2"}
+              data-plasmic-override={overrides.foreground2}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__q3PM)}
+              className={classNames(projectcss.all, sty.foreground2)}
             >
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"foreground2"}
-                data-plasmic-override={overrides.foreground2}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.foreground2)}
+                className={classNames(projectcss.all, sty.freeBox__a9O5R)}
               >
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__a9O5R)}
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___4DEAs)}
                 >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___4DEAs)}
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__xfThl)}
                   >
+                    <h1
+                      data-plasmic-name={"h1"}
+                      data-plasmic-override={overrides.h1}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1
+                      )}
+                    >
+                      {"Log-in"}
+                    </h1>
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__xfThl)}
+                      className={classNames(projectcss.all, sty.freeBox__qVa76)}
                     >
-                      <h1
-                        data-plasmic-name={"h1"}
-                        data-plasmic-override={overrides.h1}
+                      <input
+                        data-plasmic-name={"textbox2"}
+                        data-plasmic-override={overrides.textbox2}
                         className={classNames(
                           projectcss.all,
-                          projectcss.h1,
-                          projectcss.__wab_text,
-                          sty.h1
+                          projectcss.input,
+                          sty.textbox2
                         )}
-                      >
-                        {"Log-in"}
-                      </h1>
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__qVa76
-                        )}
-                      >
-                        <input
-                          data-plasmic-name={"textbox2"}
-                          data-plasmic-override={overrides.textbox2}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.input,
-                            sty.textbox2
-                          )}
-                          onChange={e => {
-                            p.generateStateOnChangeProp($state, [
-                              "textbox2",
-                              "value"
-                            ])(e.target.value);
-                          }}
-                          placeholder={"Username"}
-                          ref={ref => {
-                            $refs["textbox2"] = ref;
-                          }}
-                          size={1}
-                          type={"text"}
-                          value={p.generateStateValueProp($state, [
+                        onChange={e => {
+                          p.generateStateOnChangeProp($state, [
                             "textbox2",
                             "value"
-                          ])}
-                        />
+                          ])(e.target.value);
+                        }}
+                        placeholder={"Username"}
+                        ref={ref => {
+                          $refs["textbox2"] = ref;
+                        }}
+                        size={1}
+                        type={"text"}
+                        value={p.generateStateValueProp($state, [
+                          "textbox2",
+                          "value"
+                        ])}
+                      />
 
-                        <input
-                          data-plasmic-name={"password"}
-                          data-plasmic-override={overrides.password}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.input,
-                            sty.password
-                          )}
-                          onChange={e => {
-                            p.generateStateOnChangeProp($state, [
-                              "password",
-                              "value"
-                            ])(e.target.value);
-                          }}
-                          placeholder={"Password"}
-                          ref={ref => {
-                            $refs["password"] = ref;
-                          }}
-                          size={1}
-                          type={"password"}
-                          value={p.generateStateValueProp($state, [
-                            "password",
-                            "value"
-                          ])}
-                        />
-                      </p.Stack>
-                      <a
-                        data-plasmic-name={"link"}
-                        data-plasmic-override={overrides.link}
+                      <input
+                        data-plasmic-name={"password"}
+                        data-plasmic-override={overrides.password}
                         className={classNames(
                           projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          sty.link
+                          projectcss.input,
+                          sty.password
                         )}
-                        href={`/recupera-psw`}
-                      >
-                        {"Hai dimenticato la password?"}
-                      </a>
-                      <Button
-                        data-plasmic-name={"button"}
-                        data-plasmic-override={overrides.button}
-                        className={classNames("__wab_instance", sty.button)}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__ivOyl
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        link={`/Home`}
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__jkSo1
-                            )}
-                            role={"img"}
-                          />
-                        }
-                      >
-                        <div
-                          data-plasmic-name={"text"}
-                          data-plasmic-override={overrides.text}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text
-                          )}
-                        >
-                          {""}
-                        </div>
-                      </Button>
+                        onChange={e => {
+                          p.generateStateOnChangeProp($state, [
+                            "password",
+                            "value"
+                          ])(e.target.value);
+                        }}
+                        placeholder={"Password"}
+                        ref={ref => {
+                          $refs["password"] = ref;
+                        }}
+                        size={1}
+                        type={"password"}
+                        value={p.generateStateValueProp($state, [
+                          "password",
+                          "value"
+                        ])}
+                      />
                     </p.Stack>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__pcmPe)}
-                    />
-                  </div>
-                </p.Stack>
+                    <a
+                      data-plasmic-name={"link"}
+                      data-plasmic-override={overrides.link}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link
+                      )}
+                      href={`/recupera-psw`}
+                    >
+                      {"Hai dimenticato la password?"}
+                    </a>
+                    <Button
+                      data-plasmic-name={"button"}
+                      data-plasmic-override={overrides.button}
+                      className={classNames("__wab_instance", sty.button)}
+                      endIcon={
+                        <Icon38Icon
+                          className={classNames(projectcss.all, sty.svg__ivOyl)}
+                          role={"img"}
+                        />
+                      }
+                      link={`/Home`}
+                      startIcon={
+                        <ChecksvgIcon
+                          className={classNames(projectcss.all, sty.svg__jkSo1)}
+                          role={"img"}
+                        />
+                      }
+                    >
+                      <div
+                        data-plasmic-name={"text"}
+                        data-plasmic-override={overrides.text}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text
+                        )}
+                      >
+                        {""}
+                      </div>
+                    </Button>
+                  </p.Stack>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__pcmPe)}
+                  />
+                </div>
               </p.Stack>
             </p.Stack>
           </p.Stack>
