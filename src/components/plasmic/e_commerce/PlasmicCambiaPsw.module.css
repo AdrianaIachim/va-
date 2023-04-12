@@ -9,7 +9,7 @@
   background: url("./images/plant1Featuredjpg.png") top 50% left 50% / cover repeat;
   min-width: 0;
   min-height: 0;
-  padding: 166px 208px 374px 280px;
+  padding: 166px 420px 374px 408px;
 }
 .group33459 {
   width: 532px;
@@ -30,29 +30,10 @@
   left: -5.26%;
   background: var(--token-Re3SCJIk_yyCbi);
   padding-right: 79px;
-  padding-left: 117px;
+  padding-left: 88px;
   margin-left: 0px;
   margin-bottom: 0px;
   border-radius: 24px;
-}
-.svg {
-  position: absolute;
-  object-fit: cover;
-  max-width: 100%;
-  color: #98a9bc;
-  width: 32px;
-  height: 32px;
-  display: block;
-  top: 27px;
-  left: 27px;
-  overflow: hidden;
-}
-.link {
-  position: absolute;
-  left: 41px;
-  top: 25px;
-  width: 78px;
-  margin-right: 0px;
 }
 .text {
   display: block;
@@ -121,4 +102,30 @@
   top: 283px;
   margin-bottom: 3px;
   border-radius: 20px;
+}
+.link {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 51px;
+  height: auto;
+  max-width: 100%;
+  left: 25px;
+  top: 13px;
+  padding: 8px;
+}
+.svg {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #98a9bc;
+  width: 32px;
+  height: 32px;
+  display: block;
+  top: 17px;
+  left: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
 }

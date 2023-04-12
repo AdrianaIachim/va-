@@ -18,6 +18,7 @@ import {
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
 import sty from "./PlasmicConfermaPswCambiata.module.css"; // plasmic-import: i2BFQN7iML/css
 import IconDirectionsChevronLeftIcon from "./icons/PlasmicIcon__IconDirectionsChevronLeft"; // plasmic-import: r8iYFvfxMc/icon
@@ -62,6 +63,7 @@ function PlasmicConfermaPswCambiata__RenderFunc(props) {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_library_plasmic_color_type_css.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -75,13 +77,6 @@ function PlasmicConfermaPswCambiata__RenderFunc(props) {
               data-plasmic-override={overrides.card}
               className={classNames(projectcss.all, sty.card)}
             >
-              <IconDirectionsChevronLeftIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
-                role={"img"}
-              />
-
               <div
                 data-plasmic-name={"text"}
                 data-plasmic-override={overrides.text}
@@ -99,13 +94,11 @@ function PlasmicConfermaPswCambiata__RenderFunc(props) {
                 className={classNames(projectcss.all, sty.signIn)}
               >
                 <a
-                  data-plasmic-name={"link"}
-                  data-plasmic-override={overrides.link}
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link
+                    sty.link__mrGdU
                   )}
                   href={`/login`}
                 >
@@ -119,6 +112,20 @@ function PlasmicConfermaPswCambiata__RenderFunc(props) {
                   </React.Fragment>
                 </a>
               </div>
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__q5Fp
+                )}
+              >
+                <IconDirectionsChevronLeftIcon
+                  data-plasmic-name={"svg"}
+                  data-plasmic-override={overrides.svg}
+                  className={classNames(projectcss.all, sty.svg)}
+                  role={"img"}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -128,13 +135,12 @@ function PlasmicConfermaPswCambiata__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "group33459", "card", "svg", "text", "signIn", "link"],
-  group33459: ["group33459", "card", "svg", "text", "signIn", "link"],
-  card: ["card", "svg", "text", "signIn", "link"],
-  svg: ["svg"],
+  root: ["root", "group33459", "card", "text", "signIn", "svg"],
+  group33459: ["group33459", "card", "text", "signIn", "svg"],
+  card: ["card", "text", "signIn", "svg"],
   text: ["text"],
-  signIn: ["signIn", "link"],
-  link: ["link"]
+  signIn: ["signIn"],
+  svg: ["svg"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -187,10 +193,9 @@ export const PlasmicConfermaPswCambiata = Object.assign(
     // Helper components rendering sub-elements
     group33459: makeNodeComponent("group33459"),
     card: makeNodeComponent("card"),
-    svg: makeNodeComponent("svg"),
     text: makeNodeComponent("text"),
     signIn: makeNodeComponent("signIn"),
-    link: makeNodeComponent("link"),
+    svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicConfermaPswCambiata
     internalVariantProps: PlasmicConfermaPswCambiata__VariantProps,
     internalArgProps: PlasmicConfermaPswCambiata__ArgProps,

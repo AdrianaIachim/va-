@@ -18,10 +18,9 @@ import {
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
 import sty from "./PlasmicRecuperaPsw.module.css"; // plasmic-import: zgR9JvU5my/css
-import IconActionMainCalendar2Icon from "./icons/PlasmicIcon__IconActionMainCalendar2"; // plasmic-import: QQ0kYpyof/icon
-import IconDirectionsChevronDownIcon from "./icons/PlasmicIcon__IconDirectionsChevronDown"; // plasmic-import: moRdiSEyvJ/icon
 import IconDirectionsChevronLeftIcon from "./icons/PlasmicIcon__IconDirectionsChevronLeft"; // plasmic-import: r8iYFvfxMc/icon
 
 export const PlasmicRecuperaPsw__VariantProps = new Array();
@@ -49,6 +48,20 @@ function PlasmicRecuperaPsw__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textbox2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
+      }
+    ],
+
+    [$props, $ctx]
+  );
+
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -64,6 +77,7 @@ function PlasmicRecuperaPsw__RenderFunc(props) {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_library_plasmic_color_type_css.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -94,77 +108,80 @@ function PlasmicRecuperaPsw__RenderFunc(props) {
                 >
                   {"Hai dimenticato la password?"}
                 </h1>
-                <div
-                  data-plasmic-name={"base"}
-                  data-plasmic-override={overrides.base}
-                  className={classNames(projectcss.all, sty.base)}
+                <input
+                  data-plasmic-name={"textbox2"}
+                  data-plasmic-override={overrides.textbox2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.input,
+                    sty.textbox2
+                  )}
+                  onChange={e => {
+                    p.generateStateOnChangeProp($state, ["textbox2", "value"])(
+                      e.target.value
+                    );
+                  }}
+                  placeholder={
+                    "Inserisci la mail con la quale ti sei registrato"
+                  }
+                  ref={ref => {
+                    $refs["textbox2"] = ref;
+                  }}
+                  size={1}
+                  type={"text"}
+                  value={p.generateStateValueProp($state, [
+                    "textbox2",
+                    "value"
+                  ])}
+                />
+
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__cJuPo
+                  )}
+                  href={`/Home`}
                 >
-                  <div
-                    data-plasmic-name={"atomLabel"}
-                    data-plasmic-override={overrides.atomLabel}
-                    className={classNames(projectcss.all, sty.atomLabel)}
-                  >
-                    {false ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__wliGb
-                        )}
-                      >
-                        {"Hint/optional"}
-                      </div>
-                    ) : null}
-                  </div>
+                  {(() => {
+                    try {
+                      return undefined;
+                    } catch (e) {
+                      if (e instanceof TypeError) {
+                        return "Some link text";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </a>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__sxpu7
+                  )}
+                  href={`/login`}
+                >
                   {([2, 3, 4] ?? []).map((currentItem, currentIndex) => (
-                    <div
-                      data-plasmic-name={"inputField"}
-                      data-plasmic-override={overrides.inputField}
-                      className={classNames(projectcss.all, sty.inputField)}
+                    <IconDirectionsChevronLeftIcon
+                      data-plasmic-name={"indietro"}
+                      data-plasmic-override={overrides.indietro}
+                      className={classNames(projectcss.all, sty.indietro)}
                       key={currentIndex}
-                    >
-                      {false ? (
-                        <IconActionMainCalendar2Icon
-                          className={classNames(projectcss.all, sty.svg__xN4Rz)}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        data-plasmic-name={"atomInput"}
-                        data-plasmic-override={overrides.atomInput}
-                        className={classNames(projectcss.all, sty.atomInput)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__tz29
-                          )}
-                        >
-                          {"Inserisci la mail con la quale ti sei registrato"}
-                        </div>
-                      </div>
-                      {false ? (
-                        <IconDirectionsChevronDownIcon
-                          className={classNames(projectcss.all, sty.svg__i8Uz3)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </div>
+                      role={"img"}
+                    />
                   ))}
-                </div>
+                </a>
               </div>
             </div>
-            <IconDirectionsChevronLeftIcon
-              className={classNames(projectcss.all, sty.svg__wsgP)}
-              role={"img"}
-            />
-
             <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__x3Ojw
+                sty.text
               )}
             >
               {
@@ -204,10 +221,9 @@ const PlasmicDescendants = {
     "card",
     "rectangle8",
     "h1",
-    "base",
-    "atomLabel",
-    "inputField",
-    "atomInput",
+    "textbox2",
+    "indietro",
+    "text",
     "signIn",
     "label"
   ],
@@ -217,38 +233,19 @@ const PlasmicDescendants = {
     "card",
     "rectangle8",
     "h1",
-    "base",
-    "atomLabel",
-    "inputField",
-    "atomInput",
+    "textbox2",
+    "indietro",
+    "text",
     "signIn",
     "label"
   ],
 
-  card: [
-    "card",
-    "rectangle8",
-    "h1",
-    "base",
-    "atomLabel",
-    "inputField",
-    "atomInput"
-  ],
-
-  rectangle8: [
-    "rectangle8",
-    "h1",
-    "base",
-    "atomLabel",
-    "inputField",
-    "atomInput"
-  ],
-
+  card: ["card", "rectangle8", "h1", "textbox2", "indietro"],
+  rectangle8: ["rectangle8", "h1", "textbox2", "indietro"],
   h1: ["h1"],
-  base: ["base", "atomLabel", "inputField", "atomInput"],
-  atomLabel: ["atomLabel"],
-  inputField: ["inputField", "atomInput"],
-  atomInput: ["atomInput"],
+  textbox2: ["textbox2"],
+  indietro: ["indietro"],
+  text: ["text"],
   signIn: ["signIn", "label"],
   label: ["label"]
 };
@@ -305,10 +302,9 @@ export const PlasmicRecuperaPsw = Object.assign(
     card: makeNodeComponent("card"),
     rectangle8: makeNodeComponent("rectangle8"),
     h1: makeNodeComponent("h1"),
-    base: makeNodeComponent("base"),
-    atomLabel: makeNodeComponent("atomLabel"),
-    inputField: makeNodeComponent("inputField"),
-    atomInput: makeNodeComponent("atomInput"),
+    textbox2: makeNodeComponent("textbox2"),
+    indietro: makeNodeComponent("indietro"),
+    text: makeNodeComponent("text"),
     signIn: makeNodeComponent("signIn"),
     label: makeNodeComponent("label"),
     // Metadata about props expected for PlasmicRecuperaPsw

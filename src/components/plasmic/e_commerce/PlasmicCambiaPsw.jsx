@@ -18,6 +18,7 @@ import {
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_e_commerce.module.css"; // plasmic-import: 2GyyV1uN4xbnqKtJ7pjrQU/projectcss
 import sty from "./PlasmicCambiaPsw.module.css"; // plasmic-import: 572xutjypC/css
 import IconDirectionsChevronLeftIcon from "./icons/PlasmicIcon__IconDirectionsChevronLeft"; // plasmic-import: r8iYFvfxMc/icon
@@ -83,6 +84,7 @@ function PlasmicCambiaPsw__RenderFunc(props) {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_library_plasmic_color_type_css.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -96,33 +98,6 @@ function PlasmicCambiaPsw__RenderFunc(props) {
               data-plasmic-override={overrides.card}
               className={classNames(projectcss.all, sty.card)}
             >
-              <IconDirectionsChevronLeftIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
-                role={"img"}
-              />
-
-              <a
-                data-plasmic-name={"link"}
-                data-plasmic-override={overrides.link}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link
-                )}
-                href={`/login`}
-              >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#BAB8B8" }}
-                  >
-                    {"."}
-                  </span>
-                </React.Fragment>
-              </a>
               <div
                 data-plasmic-name={"text"}
                 data-plasmic-override={overrides.text}
@@ -222,6 +197,20 @@ function PlasmicCambiaPsw__RenderFunc(props) {
                 type={"password"}
                 value={p.generateStateValueProp($state, ["password2", "value"])}
               />
+
+              <a
+                data-plasmic-name={"link"}
+                data-plasmic-override={overrides.link}
+                className={classNames(projectcss.all, projectcss.a, sty.link)}
+                href={`/login`}
+              >
+                <IconDirectionsChevronLeftIcon
+                  data-plasmic-name={"svg"}
+                  data-plasmic-override={overrides.svg}
+                  className={classNames(projectcss.all, sty.svg)}
+                  role={"img"}
+                />
+              </a>
             </div>
           </div>
         </a>
@@ -235,49 +224,49 @@ const PlasmicDescendants = {
     "root",
     "group33459",
     "card",
-    "svg",
-    "link",
     "text",
     "signIn",
     "label",
     "h1",
     "password",
-    "password2"
+    "password2",
+    "link",
+    "svg"
   ],
 
   group33459: [
     "group33459",
     "card",
-    "svg",
-    "link",
     "text",
     "signIn",
     "label",
     "h1",
     "password",
-    "password2"
+    "password2",
+    "link",
+    "svg"
   ],
 
   card: [
     "card",
-    "svg",
-    "link",
     "text",
     "signIn",
     "label",
     "h1",
     "password",
-    "password2"
+    "password2",
+    "link",
+    "svg"
   ],
 
-  svg: ["svg"],
-  link: ["link"],
   text: ["text"],
   signIn: ["signIn", "label"],
   label: ["label"],
   h1: ["h1"],
   password: ["password"],
-  password2: ["password2"]
+  password2: ["password2"],
+  link: ["link", "svg"],
+  svg: ["svg"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -330,14 +319,14 @@ export const PlasmicCambiaPsw = Object.assign(
     // Helper components rendering sub-elements
     group33459: makeNodeComponent("group33459"),
     card: makeNodeComponent("card"),
-    svg: makeNodeComponent("svg"),
-    link: makeNodeComponent("link"),
     text: makeNodeComponent("text"),
     signIn: makeNodeComponent("signIn"),
     label: makeNodeComponent("label"),
     h1: makeNodeComponent("h1"),
     password: makeNodeComponent("password"),
     password2: makeNodeComponent("password2"),
+    link: makeNodeComponent("link"),
+    svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicCambiaPsw
     internalVariantProps: PlasmicCambiaPsw__VariantProps,
     internalArgProps: PlasmicCambiaPsw__ArgProps,

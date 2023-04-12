@@ -53,98 +53,37 @@
   left: 11px;
   width: 544px;
 }
-.base {
-  width: 420px;
-  height: 16.47%;
-  display: block;
+.textbox2 {
+  width: 415px;
   position: absolute;
-  top: 234px;
-  left: 61px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  height: 31px;
+  left: 71px;
+  top: 246px;
+  border-radius: 15px;
+  border: 1px solid #e5e5ea;
 }
-.atomLabel {
-  width: 420px;
-  height: 16px;
-  display: block;
+.link__cJuPo {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+  left: 25px;
+  top: 313px;
 }
-.text__wliGb {
-  display: block;
-  font-size: 12px;
-  text-align: right;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 0.5);
+.link__sxpu7 {
+  display: flex;
   position: absolute;
-  top: 0px;
-  right: 0px;
-}
-.inputField {
-  background: rgba(255, 255, 255, 1);
-  box-shadow: inset 0px 0px 0px 1px rgba(208, 208, 208, 1);
-  width: 420px;
-  height: 40px;
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 0px;
-  overflow: hidden;
-  border-radius: 4px;
-}
-.svg__xN4Rz {
-  position: absolute;
-  object-fit: cover;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 76px;
+  height: auto;
   max-width: 100%;
-  color: #000;
-  width: 20px;
-  height: 20px;
-  display: block;
-  top: 10px;
-  left: 8px;
-  overflow: hidden;
+  left: 9px;
+  top: 3px;
+  padding: 8px;
 }
-.atomInput {
-  width: 342px;
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 70px;
-  bottom: 10px;
-  overflow: hidden;
-}
-.text__tz29 {
-  display: block;
-  font-size: 14px;
-  text-align: right;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 18px;
-  color: rgba(208, 208, 208, 1);
-  position: absolute;
-  top: 15%;
-  left: 7px;
-  width: 327px;
-}
-.svg__i8Uz3 {
-  position: absolute;
-  object-fit: cover;
-  max-width: 100%;
-  color: #d1d1d1;
-  width: 20px;
-  height: 20px;
-  display: block;
-  top: 10px;
-  left: 222px;
-  overflow: hidden;
-}
-.svg__wsgP {
+.indietro {
   position: absolute;
   object-fit: cover;
   max-width: 100%;
@@ -152,11 +91,12 @@
   width: 32px;
   height: 32px;
   display: block;
-  top: 32px;
-  left: 32px;
+  top: 24px;
+  left: 16px;
   overflow: hidden;
+  flex-shrink: 0;
 }
-.text__x3Ojw {
+.text {
   display: block;
   font-size: 20px;
   text-align: center;
